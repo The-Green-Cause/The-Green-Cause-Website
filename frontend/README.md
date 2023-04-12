@@ -13,7 +13,7 @@ Navigate to the frontend directory and install the necessary packages for the pr
 npm i
 ```
 
-### 3. Start the development server.
+### 3. 🚀 Start the development server.
 Once all the packages are installed, you're ready to start the development server:
 ```bash
 npm run dev
