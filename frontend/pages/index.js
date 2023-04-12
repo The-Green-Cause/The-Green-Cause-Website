@@ -17,7 +17,7 @@ export default function Home() {
             <button className='mt-10 text-black font-bold bg-white py-2 px-5 rounded'>Join Us!</button>
           </div>
         <div id='3grid'>
-          <p>test</p>
+          <p>test2</p>
         </div>
         </div>
       </div>
