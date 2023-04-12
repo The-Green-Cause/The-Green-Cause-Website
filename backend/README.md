@@ -47,6 +47,6 @@ or
 flask run
 ```
 
-The server should now be running locally on localhost:5000.
+🚀 The server should now be running locally on localhost:5000.
 
 You're all set to start developing the backend for The Green Cause! If you have any questions or need assistance, don't hesitate to reach out.
