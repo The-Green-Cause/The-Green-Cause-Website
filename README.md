@@ -1,13 +1,15 @@
-# The-Green-Cause-Website
-### Welcome to The Green Cause's website project!
+# 🌿 The Green Cause Website
 
-In this repo we have two main folders:
-Frontend
-Backend
+## 🌍 Welcome to The Green Cause's website project!
 
-These folders contain the web interface and the server respectively.
-The frontend is in NextJS (Javascript) and the backend is in Flask (Python).
+We're thrilled to have you on board as we work together to create a fantastic online platform for The Green Cause. In this repository, you'll find two main folders that will guide you through the development process:
 
-In each folder will contain instructions on how to setup the dev environment.
+### 🔮 Frontend
+This folder houses the web interface built using Next.js (JavaScript). It's where we craft the user-facing magic!
 
-I look forward to working with you all!
+### 🛠️ Backend
+This folder is home to our server, which is powered by Flask (Python). Here, we handle the behind-the-scenes work that brings our platform to life.
+
+Each folder contains detailed instructions on setting up the development environment, so you can jump right into contributing.
+
+💡 We're excited to collaborate and see the incredible work you'll bring to The Green Cause Website!
