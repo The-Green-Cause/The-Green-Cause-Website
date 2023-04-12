@@ -20,6 +20,7 @@ venv/Scripts/bin/activate
 - MacOS/Linux:
 ```bash
 source venv/bin/activate
+```
 
 ### 3. Install packages
 Install the required packages from __requirements.txt__:
