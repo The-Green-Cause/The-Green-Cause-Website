@@ -13,9 +13,13 @@ Navigate to the backend directory and create a virtual environment to isolate de
 python -m venv venv
 ```
 Activate the virtual environment:
-- Windows:
+- Windows (in CMD):
 ```bash
-venv/Scripts/bin/activate
+venv/Scripts/activate.bat
+```
+- Windows (in Powershell):
+```bash
+venv/Scripts/Activate.ps1
 ```
 - MacOS/Linux:
 ```bash
