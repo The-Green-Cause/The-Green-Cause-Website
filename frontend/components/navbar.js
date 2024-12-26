@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
+//test comment
 export default function Navbar() {
   return (
     <header className="bg-black w-full">
