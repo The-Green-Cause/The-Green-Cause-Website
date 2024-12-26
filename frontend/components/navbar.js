@@ -6,7 +6,7 @@ export default function Navbar() {
     <header className="bg-black w-full">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center px-5">
-          <div className="h-12 w-12 bg-gray-400 rounded"><img src="logo.png"></img></div>
+          <div className="h-12 w-12 bg-gray-400 rounded"><Image src="logo.png" alt="logo"></Image></div>
         </div>
 
         <div className="hidden md:flex items-center space-x-8">
