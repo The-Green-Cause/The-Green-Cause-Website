@@ -1,22 +1,23 @@
 import Image from 'next/image';
-
+import Link from 'next/link';
+//test comment
 export default function Navbar() {
   return (
     <header className="bg-black w-full">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center px-5">
-          <div className="h-12 w-12 bg-gray-400 rounded"></div>
+          <div className="h-12 w-12 bg-gray-400 rounded"><Image src="logo.png" alt="logo"></Image></div>
         </div>
 
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Home</a>
-          <a href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">About Us</a>
-          <a href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Teams</a>
-          <a href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">The Bulletin</a>
-          <a href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Join Us</a>
-          <a href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Contact</a>
-          <a href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Donate</a>
-          <a href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">FAQs</a>
+          <Link href="/" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Home</Link>
+          <Link href="/aboutus" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">About Us</Link>
+          <Link href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Teams</Link>
+          <Link href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">The Bulletin</Link>
+          <Link href="/joinus" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Join Us</Link>
+          <Link href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Contact</Link>
+          <Link href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Donate</Link>
+          <Link href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">FAQs</Link>
         </div>
       </nav>
     </header>
