@@ -27,13 +27,13 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-3 gap-24 my-7">
             <div className="bg-gray-300 text-center p-28 font-croissant_one">
-              <a href="#">Partner With Us</a>
+              <Link href="#">Partner With Us</Link>
             </div>
             <div className="bg-gray-300 text-center p-28 font-croissant_one">
-              <a href="#">Join</a>
+              <Link href="#">Join</Link>
             </div>
             <div className="bg-gray-300 text-center p-28 font-croissant_one">
-              <a href="#">Contribute</a>
+              <Link href="#">Contribute</Link>
             </div>
         </div>
         </div> 
