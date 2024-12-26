@@ -9,7 +9,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        merriweather_italic: ['"Merriweather"', "sans-serif"],
+        croissant_one: ['"Croissant One"', '"Merriweather"', "sans-serif"],
+        // Add more custom font families as needed
+      },
+    },
   },
   plugins: [],
 }
