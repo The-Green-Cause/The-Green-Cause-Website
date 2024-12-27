@@ -28,16 +28,36 @@ export default function Home() {
         sustainable lifestyles and create lasting impact.
         </div>
         <div className="grid grid-cols-3 gap-24 my-7">
-            <div className="bg-gray-300 text-center p-28 font-croissant_one">
-              <Link href="#">Partner With Us</Link>
+            {/* Partner With Us */}
+            <div className="relative text-center p-28 font-croissant_one">
+              <div
+                className="absolute inset-0 bg-cover bg-gray-300 opacity-30"
+                style={{ backgroundImage: "url('partner.png')" }}
+              ></div>
+              <div className="absolute inset-0 bg-green-700 opacity-40"></div>
+              <Link href="#" className="relative z-10">Partner With Us</Link>
             </div>
-            <div className="bg-gray-300 text-center p-28 font-croissant_one">
-              <Link href="#">Join</Link>
+
+            {/* Join */}
+            <div className="relative text-center p-28 font-croissant_one">
+              <div
+                className="absolute inset-0 bg-cover bg-gray-300 opacity-30"
+                style={{ backgroundImage: "url('join.png')" }}
+              ></div>
+              <div className="absolute inset-0 bg-green-700 opacity-40"></div>
+              <Link href="#" className="relative z-10">Join</Link>
             </div>
-            <div className="bg-gray-300 text-center p-28 font-croissant_one">
-              <Link href="#">Contribute</Link>
+
+            {/* Contribute */}
+            <div className="relative text-center p-28 font-croissant_one">
+              <div
+                className="absolute inset-0 bg-cover bg-gray-300 opacity-30"
+                style={{ backgroundImage: "url('contribute.png')" }}
+              ></div>
+              <div className="absolute inset-0 bg-green-700 opacity-40"></div>
+              <Link href="#" className="relative z-10">Contribute</Link>
             </div>
-        </div>
+          </div>
         </div> 
       </div>
     </>
