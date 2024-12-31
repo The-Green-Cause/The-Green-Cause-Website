@@ -15,7 +15,7 @@ export default function Home() {
       <div>
         <Navbar/>
         <div id="imagebg" className="flex justify-center items-center bg-green-900 w-full h-[60vh] overflow-hidden">
-          <div className="text-center ml-24">
+          <div className="text-center ml-22">
             <p className="text-white text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-6xl">
               Earth&apos;s future, Our Mission
             </p>
