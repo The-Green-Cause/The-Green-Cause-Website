@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 
 const ImageCarousel = () => {
   return (
-    <div style={{ width: '100%', maxWidth: '600px', maxHeight: '25rem', margin: '0 auto' }}>
+    <div style={{ width: '100%', maxWidth: '700px', maxHeight: '32rem', margin: '0 auto' }}>
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={30}
@@ -22,7 +22,7 @@ const ImageCarousel = () => {
         navigation={true}
       >
         <SwiperSlide>
-          <div style={{ position: 'relative', width: '100%', height: '400px' }}>
+          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
             <Image
               src="/slideshow/two.jpg"
               alt="Slide 2"
@@ -33,7 +33,7 @@ const ImageCarousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div style={{ position: 'relative', width: '100%', height: '400px' }}>
+          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
             <Image
               src="/slideshow/three.jpg"
               alt="Slide 3"
@@ -44,7 +44,7 @@ const ImageCarousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div style={{ position: 'relative', width: '100%', height: '400px' }}>
+          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
             <Image
               src="/slideshow/four.png"
               alt="Slide 4"
@@ -55,7 +55,7 @@ const ImageCarousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div style={{ position: 'relative', width: '100%', height: '400px' }}>
+          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
             <Image
               src="/slideshow/five.png"
               alt="Slide 5"
@@ -66,7 +66,7 @@ const ImageCarousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div style={{ position: 'relative', width: '100%', height: '400px' }}>
+          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
             <Image
               src="/slideshow/six.png"
               alt="Slide 6"
@@ -77,7 +77,7 @@ const ImageCarousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div style={{ position: 'relative', width: '100%', height: '400px' }}>
+          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
             <Image
               src="/slideshow/seven.png"
               alt="Slide 7"
@@ -88,7 +88,7 @@ const ImageCarousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div style={{ position: 'relative', width: '100%', height: '400px' }}>
+          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
             <Image
               src="/slideshow/eight.png"
               alt="Slide 8"
@@ -99,7 +99,7 @@ const ImageCarousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div style={{ position: 'relative', width: '100%', height: '400px' }}>
+          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
             <Image
               src="/slideshow/nine.png"
               alt="Slide 9"
@@ -110,7 +110,7 @@ const ImageCarousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div style={{ position: 'relative', width: '100%', height: '400px' }}>
+          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
             <Image
               src="/slideshow/ten.png"
               alt="Slide 10"
