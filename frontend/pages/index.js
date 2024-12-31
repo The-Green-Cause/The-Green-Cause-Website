@@ -17,7 +17,7 @@ export default function Home() {
         <div id="imagebg" className="flex justify-center items-center bg-green-900 w-full h-[60vh] overflow-hidden">
           <div className="text-center ml-24">
             <p className="text-white text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-6xl">
-              Earth's future, Our Mission
+              Earth&apos;s future, Our Mission
             </p>
             <p className="text-white text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-4xl">
               Planting the seeds of knowledge to educate and empower generations to a thriving earth and sustainable future
