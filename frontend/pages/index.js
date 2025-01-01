@@ -16,13 +16,13 @@ export default function Home() {
         <Navbar/>
         <div id="imagebg" className="flex justify-center items-center bg-green-900 w-full h-[60vh] overflow-hidden">
           <div className="text-center ml-22">
-            <p className="text-white text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-6xl">
-              Earth&apos;s future, Our Mission
+            <p className="text-white text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-6xl mr-1 ml-1 font-lora_semibold">
+              Earth&apos;s future, <br />Our Mission
             </p>
-            <p className="text-white text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-4xl">
+            <p className="text-white text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-3xl mt-5 font-poppins">
               Planting the seeds of knowledge to educate and empower generations to a thriving earth and sustainable future
             </p>
-            <button className="mt-10 text-black font-bold bg-white py-2 px-5 rounded">Join Us!</button>
+            <button className="mt-8 text-black font-bold bg-white py-2 px-5 rounded font-lora_semibold">Join Us!</button>
           </div>
           <div className="relative w-full h-[60vh] flex justify-center items-center overflow-hidden">
           <div className="absolute w-full h-full">
