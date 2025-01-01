@@ -14,6 +14,8 @@ module.exports = {
       fontFamily: {
         merriweather_italic: ['"Merriweather"', "sans-serif"],
         croissant_one: ['"Croissant One"', '"Merriweather"', "sans-serif"],
+        lora_semibold: ['"Lora"', "sans-serif"],
+        poppins: ['"Poppins"', "sans-serif"]
         // Add more custom font families as needed
       },
     },

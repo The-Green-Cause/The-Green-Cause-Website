@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 
 const ImageCarousel = () => {
   return (
-    <div style={{ width: '100%', maxWidth: '700px', maxHeight: '32rem', margin: '0 auto' }}>
+    <div style={{ width: '100%', maxWidth: '750px', maxHeight: '32rem', margin: '0 auto' }}>
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={30}
