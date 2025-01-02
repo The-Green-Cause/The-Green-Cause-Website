@@ -13,11 +13,19 @@ export default function AboutUs(){
             <div>
                 <Navbar />
                 <div>
-                    <h1>ORIGINS</h1>
+                    <h1 className="text-center mt-5 mb-5 text-2xl">ORIGINS</h1>
+                    <p>The Green Cause started with founders Frida Ruiz and Bianca Palomino. 
+                        When noticing the lack of emphasis on environmental education in her town, Frida wanted to extend the knowledge 
+                        necessary to spark urgency in the young generation that will soon take charge of the future. 
+                        Bianca resonated with this idea as she realized that her town had extremely limited information on the 
+                        environment within the courses and activities available throughout her time in the public education system. 
+                        At the peak of the pandemic, Frida and Bianca worked towards recruiting members and contacting schools within, 
+                        first, their counties and soon expanding throughout all of New Jersey while also presenting at panels that 
+                        advocated for the voices of youth leaders and environmental change.</p>
                 </div>
                 <div>
-                    <h1>OUR THREE PILARS</h1>
-                    <div className="grid grid-cols-3 grid-rows-2">
+                    <h1 className="text-center mt-5 mb-5 text-2xl">OUR THREE PILARS</h1>
+                    <div className="grid grid-cols-3 grid-rows-[1fr_2fr_1fr] gap-5">
                         <div className="bg-gray-200 text-center">Engagement</div>
                         <div className="bg-gray-200 text-center">Solution Based Learning</div>
                         <div className="bg-gray-200 text-center">Considering the Impacts</div>
