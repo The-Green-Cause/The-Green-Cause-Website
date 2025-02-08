@@ -13,12 +13,12 @@ export default function Navbar() {
           <Link href="/" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Home</Link>
           <Link href="/aboutus" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">About Us</Link>
           <Link href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Teams</Link>
+          <Link href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Lessons</Link>
           <Link href="/joinus" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Join Us</Link>
           <Link href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Contact</Link>
-          <Link href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Donate</Link>
           <Link href="/faq" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">FAQs</Link>
         </div>
       </nav>
-    </header>
+    </header> 
   );
 }

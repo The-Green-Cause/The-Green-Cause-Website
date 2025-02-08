@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <div>
         <Navbar/>
-        <div id="imagebg" className="flex justify-center items-center bg-green-900 w-full h-[60vh] overflow-hidden">
+        <div id="imagebg" className="flex justify-center items-center bg-emerald-700 w-full h-[60vh] overflow-hidden">
           <div className="text-center ml-22">
             <p className="text-white text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-6xl mr-1 ml-1 font-lora_semibold">
               Earth&apos;s future, <br />Our Mission
@@ -40,34 +40,39 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-3 gap-24 my-7">
             {/* Partner With Us */}
+            <Link href="/contact" className="relative z-10">
             <div className="relative text-center p-28 font-croissant_one">
               <div
                 className="absolute inset-0 bg-cover bg-gray-300 opacity-30"
                 style={{ backgroundImage: "url('partner.png')" }}
               ></div>
               <div className="absolute inset-0 bg-green-700 opacity-40"></div>
-              <Link href="#" className="relative z-10">Partner With Us</Link>
+              Partner With Us
             </div>
+            </Link>
 
             {/* Join */}
-            <div className="relative text-center p-28 font-croissant_one">
+            <Link href="/joinus" className="relative z-10"><div className="relative text-center p-28 font-croissant_one">
               <div
                 className="absolute inset-0 bg-cover bg-gray-300 opacity-30"
                 style={{ backgroundImage: "url('join.png')" }}
               ></div>
               <div className="absolute inset-0 bg-green-700 opacity-40"></div>
-              <Link href="#" className="relative z-10">Join</Link>
+              Join
             </div>
+            </Link>
 
             {/* Contribute */}
+            <Link href="#" className="relative z-10">
             <div className="relative text-center p-28 font-croissant_one">
               <div
                 className="absolute inset-0 bg-cover bg-gray-300 opacity-30"
                 style={{ backgroundImage: "url('contribute.png')" }}
               ></div>
-              <div className="absolute inset-0 bg-green-700 opacity-40"></div>
-              <Link href="#" className="relative z-10">Contribute</Link>
+              <div className="absolute inset-0 bg-green-700 opacity-40"></div> 
+              Donate
             </div>
+            </Link>
           </div>
         </div> 
       </div>

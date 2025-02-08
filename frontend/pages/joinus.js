@@ -21,7 +21,7 @@ export default function Home() {
               every two weeks or so, as this is a rolling basis application.</p>
 
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLRDZQk9B-d8kuFSL66o5g_Gm5P0P5Z3xr3WERNX4ewrhtYA/viewform" target="_blank">
-                <button>Join us!</button>
+                <button className="bg-teal-400">Join us!</button>
               </a>
         
         </div>

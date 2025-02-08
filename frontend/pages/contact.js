@@ -12,7 +12,7 @@ export default function Home() {
       <div>
         <Navbar/>
         <div>
-            <h1>JOIN US</h1>
+            <h1>CONTACT US</h1>
             <p>As we are expanding our organization to cover chapters 
               from all over, we are excited to also expand our team in order to help 
               facilitate and support our chapters’ work. Our goal is to have chapter coordinators 
