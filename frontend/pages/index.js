@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar";
+import Navbar from "../components/navbar";
 import Head from "next/head";
 import Link from 'next/link';
 import ImageCarousel from '../components/carousel';
