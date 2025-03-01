@@ -12,10 +12,9 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-8">
           <Link href="/" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Home</Link>
           <Link href="/aboutus" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">About Us</Link>
-          <Link href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Teams</Link>
+          <Link href="/chapters" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Chapters</Link>
           <Link href="/lessons" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Lessons</Link>
-          <Link href="/joinus" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Join Us</Link>
-          <Link href="#" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Contact</Link>
+          <Link href="/contact" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">Contact</Link>
           <Link href="/faq" className="text-white font-semibold hover:text-green-200 transition-colors duration-200">FAQs</Link>
         </div>
       </nav>
