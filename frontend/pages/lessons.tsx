@@ -148,7 +148,7 @@ export default function Lessons() {
             <div style={{ fontFamily: "'Inter', sans-serif" }} className="h-[100vh]">
                 <Navbar/>
                 <div className="text-black px-20 py-10 bg-white">
-                    <p className="text-center font-bold text-5xl mb-5">Our Lessons</p>
+                    <p className="text-center font-bold text-5xl mb-5 font-lora_semibold">Our Lessons</p>
                     <p className="text-left font-regular text-xl">The Green Cause’s 30+ lessons cover a wide array of environmental topics from introducing key themes like global warming and deforestation to more detailed presentations like sharks and chemical pollution. To accompany the lessons, they will come with interactive materials such as videos, games, or other relevant links. We make sure to create each lesson using our three pillars (engagement, solutions-based learning, and considering the impacts). For more information on the pillars, read the About Us section. 
                     <br/>                    <br/>
                     The lesson creating process consists of members creating an outline, which includes target audience, lesson layout, and accompanying interactive activities. After approval from chapter leads, the members use any feedback given to create the lessons which are then reviewed using our rubric. In order to ensure our lessons are of quality, we are establishing a Teachers’ Lesson Review where formal educators and those with education credentials can provide feedback to our lessons. If you are interested in joining, please fill out this form
@@ -165,21 +165,21 @@ export default function Lessons() {
                     <br/>
                     <br/>
                     <div id="k2" className="mb-10">
-                        <p className="font-semibold text-2xl mb-5">Lessons suitable for elementary school students.</p>
+                        <p className="font-semibold text-2xl mb-5 font-lora_semibold">Lessons suitable for elementary school students.</p>
                         <hr />
                         <div className="rounded-2xl px-5 py-5 grid md:grid-cols-5 grid-cols-1 gap-8 text-center">
                             {renderLessons("Elementary")}
                         </div>
                     </div>
                     <div id="35" className="mt-10 mb-10">
-                        <p className="font-semibold text-2xl mb-5">Lessons suitable for middle school students.</p>
+                        <p className="font-semibold text-2xl mb-5 font-lora_semibold">Lessons suitable for middle school students.</p>
                         <hr />
                         <div className="rounded-2xl px-5 py-5 grid md:grid-cols-5 grid-cols-1 gap-8 text-center">
                             {renderLessons("Middle")}
                         </div>
                     </div>
                     <div id="68" className="mt-10 mb-10">
-                        <p className="font-semibold text-2xl mb-5">Lessons suitable for high school students.</p>
+                        <p className="font-semibold text-2xl mb-5 font-lora_semibold">Lessons suitable for high school students.</p>
                         <hr />
                         <div className="rounded-2xl px-5 py-5 flex md:grid-cols-5 grid-cols-1 gap-8 text-center">
                             {renderLessons("High")}

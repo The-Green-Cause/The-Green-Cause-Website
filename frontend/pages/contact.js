@@ -51,7 +51,7 @@ export default function Contact() {
       <div>
         <Navbar/>
         <div className="flex flex-col items-center"> {/* Centers content horizontally */}
-          <h1 className="text-center text-5xl mt-4 mb-4">CONTACT US</h1>
+          <h1 className="text-center text-5xl mt-4 mb-4 font-lora_semibold">CONTACT US</h1>
 
           <Form onSubmit={handleSubmit} className="flex flex-col max-w-sm w-full"> 
             <input type="text" name="name" placeholder="Name" required className="mb-2 p-2 border"/>
