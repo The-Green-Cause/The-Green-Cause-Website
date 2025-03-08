@@ -30,51 +30,59 @@ export default function Home() {
           </div>
         </div>
         </div>
-        <div className="flex flex-col items-center my-7">
-        <h3 className="font-merriweather_italic text-2xl md:text-3xl text-center mb-6">Who We Are</h3>
-        <div className="max-w-5xl self-center text-center">
-        The Green Cause is a youth-led environmental organization dedicated to promoting sustainability and environmental awareness. 
-        Through engaging educational workshops, community initiatives, and our chapters, we empower the youth and communities to take 
-        action in protecting our planet. Our mission is rooted in collaboration, innovation, and inspiring the next generation to lead 
-        sustainable lifestyles and create lasting impact.
+        {/* Who We Are Section */}
+        <div className="flex flex-col items-center my-10 px-6 text-center">
+          <h3 className="font-merriweather_italic text-3xl md:text-3xl mb-6 text-emerald-700">
+            Who We Are
+          </h3>
+          <p className="max-w-4xl text-lg leading-relaxed">
+            The Green Cause is a youth-led environmental organization dedicated 
+            to promoting sustainability and environmental awareness. Through engaging 
+            educational workshops, community initiatives, and our chapters, we empower 
+            youth and communities to take action in protecting our planet. Our mission 
+            is rooted in collaboration, innovation, and inspiring the next generation 
+            to lead sustainable lifestyles and create lasting impact.
+          </p>
         </div>
-        <div className="grid grid-cols-3 gap-24 my-7">
-            {/* Partner With Us */}
-            <Link href="/contact" className="relative z-10">
-            <div className="relative text-center p-28 font-croissant_one">
+
+        {/* Action Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 mb-10">
+          {/* Partner With Us */}
+          <Link href="/contact" className="relative group">
+            <div className="relative text-center p-20 font-croissant_one text-white">
               <div
-                className="absolute inset-0 bg-cover bg-gray-300 opacity-30"
+                className="absolute inset-0 bg-cover bg-gray-300 opacity-30 group-hover:opacity-40 transition"
                 style={{ backgroundImage: "url('partner.png')" }}
               ></div>
-              <div className="absolute inset-0 bg-green-700 opacity-40"></div>
-              Partner With Us
+              <div className="absolute inset-0 bg-green-700 opacity-40 group-hover:opacity-50 transition"></div>
+              <span className="relative z-10 text-2xl">Partner With Us</span>
             </div>
-            </Link>
+          </Link>
 
-            {/* Join */}
-            <Link href="/joinus" className="relative z-10"><div className="relative text-center p-28 font-croissant_one">
+          {/* Join */}
+          <Link href="/joinus" className="relative group">
+            <div className="relative text-center p-20 font-croissant_one text-white">
               <div
-                className="absolute inset-0 bg-cover bg-gray-300 opacity-30"
+                className="absolute inset-0 bg-cover bg-gray-300 opacity-30 group-hover:opacity-40 transition"
                 style={{ backgroundImage: "url('join.png')" }}
               ></div>
-              <div className="absolute inset-0 bg-green-700 opacity-40"></div>
-              Join
+              <div className="absolute inset-0 bg-green-700 opacity-40 group-hover:opacity-50 transition"></div>
+              <span className="relative z-10 text-2xl">Join</span>
             </div>
-            </Link>
+          </Link>
 
-            {/* Contribute */}
-            <Link href="#" className="relative z-10">
-            <div className="relative text-center p-28 font-croissant_one">
+          {/* Donate */}
+          <Link href="#" className="relative group">
+            <div className="relative text-center p-20 font-croissant_one text-white">
               <div
-                className="absolute inset-0 bg-cover bg-gray-300 opacity-30"
+                className="absolute inset-0 bg-cover bg-gray-300 opacity-30 group-hover:opacity-40 transition"
                 style={{ backgroundImage: "url('contribute.png')" }}
               ></div>
-              <div className="absolute inset-0 bg-green-700 opacity-40"></div> 
-              Donate
+              <div className="absolute inset-0 bg-green-700 opacity-40 group-hover:opacity-50 transition"></div>
+              <span className="relative z-10 text-2xl">Donate</span>
             </div>
-            </Link>
-          </div>
-        </div> 
+          </Link>
+        </div>
       </div>
     </>
   )
