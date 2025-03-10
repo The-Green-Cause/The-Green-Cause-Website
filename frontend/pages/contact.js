@@ -72,6 +72,14 @@ export default function Contact() {
               className="mb-3 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
             />
             
+            <input 
+              type="text" 
+              name="subject" 
+              placeholder="Subject" 
+              required 
+              className="mb-3 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
+            />
+
             <textarea 
               name="message" 
               rows="5" 
