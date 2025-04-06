@@ -14,7 +14,7 @@ export default function Contact() {
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
-
+    console.log(json);
     const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
@@ -39,6 +39,44 @@ export default function Contact() {
     // Optionally, reset the form
     event.target.reset()
   }
+
+  async function handleSubmit(event) {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  formData.append("access_key", "CODE"); 
+
+  // Convert FormData to JSON correctly
+  const object = {};
+  formData.forEach((value, key) => object[key] = value);
+  const json = JSON.stringify(object);
+
+  console.log("Payload Sent:", json); // Debugging
+
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: json
+  });
+
+  const result = await response.json();
+  console.log("API Response:", result); // Debugging
+
+  if (result.success) {
+    setMessage("Your message has been sent!");
+  } else {
+    setMessage("Error sending message.");
+  }
+
+  setTimeout(() => {
+    setMessage("");
+  }, 3000);
+
+  event.target.reset();
+}
 
   return (
     <>
@@ -68,14 +106,6 @@ export default function Contact() {
               type="email" 
               name="email" 
               placeholder="Email" 
-              required 
-              className="mb-3 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
-            />
-            
-            <input 
-              type="text" 
-              name="subject" 
-              placeholder="Subject" 
               required 
               className="mb-3 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
             />
