@@ -34,7 +34,7 @@ export default function NigeriaChapter() {
           <div className="p-8">
             <h2 className="text-2xl font-bold mb-4">About the Chapter</h2>
             <p className="mb-6">
-              The Nigeria Chapter is our first international branch, located in Oyo. We're empowering local youth to lead sustainability efforts through education, events, and grassroots movements.
+              The Nigeria Chapter is our first international branch, located in Oyo. We&apos;re empowering local youth to lead sustainability efforts through education, events, and grassroots movements.
             </p>
 
             <h2 className="text-2xl font-bold mb-4">Recent Achievements</h2>
