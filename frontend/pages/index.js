@@ -5,7 +5,18 @@ import Link from 'next/link';
 import ImageCarousel from '../components/carousel';
 
 export default function Home() {
+  const sponsorRefs = useRef([]);
   const partnerRefs = useRef([]);
+
+  const logos = [
+    'beyond_plastics.png',
+    'seeds_of_caring.png',
+    'sustainable_haus.png',
+    'ANJEE.png',
+    'climaterealityproject.png',
+    'columbia.png',
+    'youthify.png',
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -19,12 +30,12 @@ export default function Home() {
       { threshold: 0.2 }
     );
 
-    partnerRefs.current.forEach((ref) => {
+    [...sponsorRefs.current, ...partnerRefs.current].forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
     return () => {
-      partnerRefs.current.forEach((ref) => {
+      [...sponsorRefs.current, ...partnerRefs.current].forEach((ref) => {
         if (ref) observer.unobserve(ref);
       });
     };
@@ -87,7 +98,7 @@ export default function Home() {
           </Link>
 
           {/* Join */}
-          <Link href="/joinus" className="relative group">
+          <Link href="/aboutus" className="relative group">
             <div className="relative text-center p-20 font-croissant_one text-white">
               <div
                 className="absolute inset-0 bg-cover bg-gray-300 opacity-30 group-hover:opacity-40 transition"
@@ -99,7 +110,7 @@ export default function Home() {
           </Link>
 
           {/* Donate */}
-          <Link href="#" className="relative group">
+          <Link href="/donate" className="relative group">
             <div className="relative text-center p-20 font-croissant_one text-white">
               <div
                 className="absolute inset-0 bg-cover bg-gray-300 opacity-30 group-hover:opacity-40 transition"
@@ -111,32 +122,46 @@ export default function Home() {
           </Link>
         </div>
 
-      {/* Our Partners Section */}
-<div className="flex flex-col items-center my-20 px-6 text-center">
-  <h3 className="font-merriweather_italic text-3xl md:text-4xl mb-10 text-emerald-700">
-    Our Partners
-  </h3>
-  <div
-    ref={(el) => (partnerRefs.current[0] = el)}
-    className="flex justify-between items-center w-full opacity-0 translate-y-10 transition duration-1000 ease-in-out"
-  >
-    {['beyond_plastics.png', 'seeds_of_caring.png', 'sustainable_haus.png'].map((fileName, i) => (
-      <img
-        key={fileName}
-        src={`/partners/${fileName}`}
-        alt={`Partner ${i + 1}`}
-        className="flex-1 h-36 w-auto object-contain"
-      />
-    ))}
-  </div>
-</div>
+        {/* Our Sponsors Section */}
+        <div className="flex flex-col items-center my-20 px-6 text-center">
+          <h3 className="font-merriweather_italic text-3xl md:text-4xl mb-10 text-emerald-700">
+            Our Sponsors
+          </h3>
+          <div
+            ref={(el) => (sponsorRefs.current[0] = el)}
+            className="flex justify-between items-center w-full opacity-0 translate-y-10 transition duration-1000 ease-in-out"
+          >
+            {['arch.png'].map((fileName, i) => (
+              <img
+                key={fileName}
+                src={`/sponsors/${fileName}`}
+                alt={`Sponsor ${i + 1}`}
+                className="flex-1 h-36 w-auto object-contain"
+              />
+            ))}
+          </div>
+        </div>
 
+        {/* Our Collaborators Section */}
+        <div className="flex flex-col items-center my-20 px-6 text-center">
+          <h3 className="font-merriweather_italic text-3xl md:text-3xl mb-10 text-emerald-700">
+            Our Collaborators
+          </h3>
 
-
-
-
-
-
+          <div className="relative w-full overflow-hidden">
+            {/* Infinite scrolling carousel */}
+            <div className="flex gap-16 animate-marquee gap-10 w-max">
+              {[...logos, ...logos].map((fileName, i) => (
+                <img
+                  key={`${fileName}-${i}`}
+                  src={`/partners/${fileName}`}
+                  alt={`Collaborator ${i + 1}`}
+                  className="h-36 w-auto object-contain"
+                />
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
