@@ -1,31 +1,53 @@
 import Navbar from "../components/navbar";
 import Head from "next/head";
-export default function Home() {
+import Link from 'next/link';
+
+export default function Donate() {
   return (
     <>
       <Head>
-        <title>The Green Cause - Home</title>
-        <meta name="description" content="The Green Cause" />
+        <title>The Green Cause - Donate</title>
+        <meta name="description" content="Donate to support The Green Cause" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <div>
-        <Navbar/>
-        <div>
-            <h1>JOIN US</h1>
-            <p>As we are expanding our organization to cover chapters 
-              from all over, we are excited to also expand our team in order to help 
-              facilitate and support our chapters’ work. Our goal is to have chapter coordinators 
-              that can help cover the various timezones, geographically differences, and varying chapter needs + event opportunities. 
-              If you are interested in being more involved fill out the form below! We will most likely respond to your application request 
-              every two weeks or so, as this is a rolling basis application.</p>
 
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLRDZQk9B-d8kuFSL66o5g_Gm5P0P5Z3xr3WERNX4ewrhtYA/viewform" target="_blank">
-                <button>Join us!</button>
-              </a>
+      <div>
+        <Navbar />
         
+        {/* Hero Section */}
+        <div className="flex justify-center items-center bg-emerald-700 w-full h-[60vh] overflow-hidden">
+          <div className="text-center ml-22 z-10">
+            <p className="text-white text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-6xl mr-1 ml-1 font-lora_semibold">
+              Your Support Matters
+            </p>
+            <p className="text-white text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-3xl mt-5 font-poppins">
+              Join us in making a difference by donating today!
+            </p>
+          </div>
+        </div>
+
+        {/* Donation Information Section */}
+        <div className="flex flex-col items-center my-20 px-6 text-center">
+          <h3 className="font-merriweather_italic text-3xl md:text-4xl mb-6 text-emerald-700">
+            Interested in supporting? Please donate below!
+          </h3>
+          <p className="max-w-4xl text-lg leading-relaxed mb-6">
+            Any and all donations go towards helping our team of dedicated individuals make your experience as a supporter greater. 
+            As our initiative grows, financial support is one of our most important stepping stones in reaching more people and 
+            working towards our ultimate goal of spreading awareness and educating everyone on the current state of our Earth.
+          </p>
+          <p className="max-w-4xl text-lg leading-relaxed mb-6">
+            Furthermore, our fiscal-sponsorship with The Hack Foundation means that any and all donations you make can be considered 
+            for a tax write-off. Every donation counts toward our cause, and is greatly appreciated.
+          </p>
+
+          {/* Donation Button */}
+          <Link href="https://hcb.hackclub.com/donations/start/the-green-cause" className="mt-8 inline-block text-black font-bold bg-white py-3 px-8 rounded-full text-xl font-lora_semibold hover:bg-emerald-700 hover:text-white transition duration-300">
+            Donate Now
+          </Link>
         </div>
       </div>
     </>
-  )
+  );
 }
