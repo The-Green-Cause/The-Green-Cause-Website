@@ -9,11 +9,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-black w-full">
+    <header className="bg-teal-500 w-full">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center px-5">
-          <div className="h-12 w-12 bg-gray-400 rounded">
-            <Image src="/logo.png" alt="logo" width={500} height={500} />
+          <div className="h-14 w-14 rounded">
+            <Image src="/logo.png" alt="logo" width={5000} height={5000} />
           </div>
         </div>
 
