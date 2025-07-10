@@ -1,29 +1,37 @@
 import Link from "next/link";
 import Navbar from "../../components/navbar";
-
-const chapters = {
-  nigeria: {
-    name: "Nigeria",
-    location: "Oyo, Nigeria",
-    description:
-      "Empowering students to lead sustainability efforts across Africa.",
-    image: "/images/chapters/bay-area.jpg",
-  },
-  "new-jersey": {
-    name: "New Jersey",
-    location: "Union, NJ",
-    description:
-      "Driving environmental change in the heart of the garden state.",
-    image: "/images/chapters/new-york.jpg",
-  },
-  // Add more chapters here
-};
+import { useState, useEffect } from "react";
 
 export default function Chapters() {
+  const [randomImage, setRandomImage] = useState("");
+
+  useEffect(() => {
+    const randomNum = Math.floor(Math.random() * 7) + 1;
+    setRandomImage(`/nigeriaslideshow/img${randomNum}.jpg`);
+  }, []);
+
+  const chapters = {
+    nigeria: {
+      name: "Nigeria",
+      location: "Oyo, Nigeria",
+      description:
+        "Empowering students to lead sustainability efforts across Africa.",
+      image: randomImage || "/nigeriaslideshow/img1.jpg", // fallback
+    },
+    "new-jersey": {
+      name: "New Jersey",
+      location: "Union, NJ",
+      description:
+        "Driving environmental change in the heart of the garden state.",
+      image: "/images/chapters/new-york.jpg",
+    },
+    // Add more chapters here
+  };
+
   return (
     <div>
-       <Navbar/>
-      <div className="min-h-screen bg-gray-50 py-12 px-6"> 
+      <Navbar />
+      <div className="min-h-screen bg-gray-50 py-12 px-6">
         <h1 className="text-4xl font-bold text-center mb-10">Our Chapters</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {Object.entries(chapters).map(([slug, chapter]) => (
