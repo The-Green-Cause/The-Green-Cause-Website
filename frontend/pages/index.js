@@ -100,7 +100,7 @@ export default function Home() {
           </Link>
 
           {/* Join */}
-          <Link href="/aboutus" className="relative group">
+          <Link href="/aboutus#join" className="relative group">
             <div className="relative text-center p-20 font-croissant_one text-white">
               <div
                 className="absolute inset-0 bg-cover bg-gray-300 opacity-30 group-hover:opacity-40 transition"
@@ -110,6 +110,7 @@ export default function Home() {
               <span className="relative z-10 text-2xl">Join</span>
             </div>
           </Link>
+
 
           {/* Donate */}
           <Link href="/donate" className="relative group">
@@ -152,7 +153,7 @@ export default function Home() {
 
           <div className="relative w-full overflow-hidden">
             {/* Infinite scrolling carousel */}
-            <div className="flex gap-16 animate-marquee gap-10 w-max">
+            <div className="flex gap-16 animate-marquee w-max">
               {[...logos, ...logos].map((fileName, i) => (
                 <img
                   key={`${fileName}-${i}`}
