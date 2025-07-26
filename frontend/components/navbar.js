@@ -41,12 +41,12 @@ export default function Navbar() {
 }
 
 function NavLinks({ mobile = false }) {
-  const baseStyle = "text-white font-semibold hover:text-green-200 transition-colors duration-200";
+  const baseStyle = "text-white font-cabin font-semibold hover:text-green-200 transition-colors duration-200";
   const mobileStyle = mobile ? "block py-2" : "";
 
   return (
     <>
-      <Link href="/" className={`${baseStyle} ${mobileStyle}`}>Home</Link>
+      <Link href="/" className={`${baseStyle} ${mobileStyle}`} >Home</Link>
       <Link href="/aboutus" className={`${baseStyle} ${mobileStyle}`}>About Us</Link>
       <Link href="/chapters" className={`${baseStyle} ${mobileStyle}`}>Chapters</Link>
       <Link href="/lessons" className={`${baseStyle} ${mobileStyle}`}>Lessons</Link>

@@ -15,6 +15,7 @@ module.exports = {
         croissant_one: ['"Croissant One"', '"Merriweather"', "sans-serif"],
         lora_semibold: ['"Lora"', "sans-serif"],
         poppins: ['"Poppins"', "sans-serif"],
+        cabin: ['"Cabin"', "sans-serif"],
       },
       keyframes: {
         marquee: {
