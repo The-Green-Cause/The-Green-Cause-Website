@@ -50,6 +50,7 @@ function NavLinks({ mobile = false }) {
       <Link href="/aboutus" className={`${baseStyle} ${mobileStyle}`}>About Us</Link>
       <Link href="/chapters" className={`${baseStyle} ${mobileStyle}`}>Chapters</Link>
       <Link href="/lessons" className={`${baseStyle} ${mobileStyle}`}>Lessons</Link>
+      <Link href="/media" className={`${baseStyle} ${mobileStyle}`}>Media</Link>
       <Link href="/contact" className={`${baseStyle} ${mobileStyle}`}>Contact</Link>
       <Link href="/donate" className={`${baseStyle} ${mobileStyle}`}>Donate</Link>
       <Link href="/faq" className={`${baseStyle} ${mobileStyle}`}>FAQs</Link>
