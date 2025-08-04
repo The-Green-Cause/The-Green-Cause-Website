@@ -43,7 +43,7 @@ export default function Donate() {
           </p>
 
           {/* Donation Button */}
-          <Link href="https://hcb.hackclub.com/donations/start/the-green-cause" className="mt-8 inline-block text-black font-bold bg-white py-3 px-8 rounded-full text-xl font-lora_semibold hover:bg-emerald-700 hover:text-white transition duration-300">
+          <Link href="https://hcb.hackclub.com/donations/start/the-green-cause" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block text-black font-bold bg-white py-3 px-8 rounded-full text-xl font-lora_semibold hover:bg-emerald-700 hover:text-white transition duration-300">
             Donate Now
           </Link>
         </div>
