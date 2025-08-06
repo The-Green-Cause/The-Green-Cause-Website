@@ -51,24 +51,28 @@ export default function Home() {
       </Head>
       <div>
         <Navbar />
-        <div id="imagebg" className="flex justify-center items-center bg-lightTan w-full h-[60vh] overflow-hidden">
-          <div className="text-center ml-22 z-10">
-            <p className="text-emerald-700 text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-6xl mr-1 ml-1 font-lora_semibold">
-              Earth&apos;s future, <br />Our Mission
-            </p>
-            <p className="text-emerald-700 text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-3xl mt-5 font-poppins">
-              Planting the seeds of knowledge to educate and empower generations to a thriving earth and sustainable future
-            </p>
-            <button className="mt-8 text-lightTan font-bold bg-brown-500 py-2 px-5 rounded font-lora_semibold">
-              <Link href="/aboutus">Join Us!</Link>
-            </button>
-          </div>
-          <div className="relative w-full h-[60vh] flex justify-center items-center overflow-hidden">
-            <div className="absolute w-full h-full">
-              <ImageCarousel />
-            </div>
-          </div>
-        </div>
+        <div id="imagebg" className="flex flex-col lg:flex-row bg-lightTan w-full overflow-hidden">
+  {/* Text + Button */}
+  <div className="flex flex-col justify-center items-center text-center px-4 py-10 lg:w-1/2 z-10">
+    <p className="text-emerald-700 text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-6xl font-lora_semibold">
+      Earth&apos;s future, <br />Our Mission
+    </p>
+    <p className="text-emerald-700 text-xl md:text-2xl lg:text-3xl xl:text-3xl mt-5 font-poppins max-w-2xl">
+      Planting the seeds of knowledge to educate and empower generations to a thriving earth and sustainable future
+    </p>
+    <button className="mt-8 text-lightTan font-bold bg-brown-500 py-2 px-5 rounded font-lora_semibold">
+      <Link href="/aboutus">Join Us!</Link>
+    </button>
+  </div>
+
+  {/* Carousel */}
+  <div className="relative w-full lg:w-1/2 h-[300px] lg:h-[60vh] flex justify-center items-center overflow-hidden">
+    <div className="absolute w-full h-full">
+      <ImageCarousel />
+    </div>
+  </div>
+</div>
+
 
         {/* Who We Are Section */}
         <div className="flex flex-col items-center my-10 px-6 text-center">
@@ -87,7 +91,6 @@ export default function Home() {
 
         {/* Action Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 mb-10">
-          {/* Partner With Us */}
           <Link href="/contact" className="relative group">
             <div className="relative text-center p-20 font-croissant_one text-white">
               <div
@@ -99,7 +102,6 @@ export default function Home() {
             </div>
           </Link>
 
-          {/* Join */}
           <Link href="/aboutus#join" className="relative group">
             <div className="relative text-center p-20 font-croissant_one text-white">
               <div
@@ -111,8 +113,6 @@ export default function Home() {
             </div>
           </Link>
 
-
-          {/* Donate */}
           <Link href="/donate" className="relative group">
             <div className="relative text-center p-20 font-croissant_one text-white">
               <div
@@ -146,22 +146,26 @@ export default function Home() {
         </div>
 
         {/* Our Collaborators Section */}
-        <div className="flex flex-col items-center my-20 px-6 text-center">
+        <div className="flex flex-col items-center my-20 px-4 sm:px-6 md:px-8 text-center">
           <h3 className="font-merriweather_italic text-3xl md:text-3xl mb-10 text-emerald-700">
             Our Collaborators
           </h3>
 
-          <div className="relative w-full overflow-hidden">
-            {/* Infinite scrolling carousel */}
-            <div className="flex gap-16 animate-marquee w-max">
-              {[...logos, ...logos].map((fileName, i) => (
-                <img
-                  key={`${fileName}-${i}`}
-                  src={`/partners/${fileName}`}
-                  alt={`Collaborator ${i + 1}`}
-                  className="h-36 w-auto object-contain"
-                />
-              ))}
+          {/* TEXT + SLIDER LAYOUT */}
+          <div className="flex flex-col lg:flex-row items-center gap-10 w-full">
+
+            {/* Slider */}
+            <div className="w-full overflow-hidden">
+              <div className="flex items-center gap-8 md:gap-12 lg:gap-16 animate-marquee min-w-full">
+                {[...logos, ...logos].map((fileName, i) => (
+                  <img
+                    key={`${fileName}-${i}`}
+                    src={`/partners/${fileName}`}
+                    alt={`Collaborator ${i + 1}`}
+                    className="h-20 md:h-28 lg:h-36 w-auto object-contain"
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
