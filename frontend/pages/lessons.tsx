@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import Head from "next/head";
 
 export default function Lessons() {
@@ -186,6 +187,7 @@ export default function Lessons() {
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
             {isModalOpen && (
                 <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex items-center justify-center">

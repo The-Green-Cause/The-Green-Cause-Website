@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import Head from "next/head";
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
       answer: `We want to empower high school students to make an impact in their communities by not only learning 
       about the environment but also educating younger students. Younger kids tend to look up to older students, 
       and teachers have noted that this peer-to-peer learning model is effective.
-      
+
       Additionally, volunteers gain valuable skills in presentation making, which benefits them in college and their careers.`
     }
   ];
@@ -45,9 +46,12 @@ export default function Home() {
         <link rel="icon" href="/logo.png" />
       </Head>
 
-      <div>
+      <div className="flex flex-col min-h-screen">
+        {/* Navbar */}
         <Navbar />
-        <div className="max-w-3xl mx-auto mt-10 px-6">
+
+        {/* Main Content */}
+        <main className="flex-grow max-w-3xl mx-auto mt-10 px-6 w-full">
           <h1 className="font-merriweather italic text-3xl text-center mb-8 text-emerald-700">
             Frequently Asked Questions
           </h1>
@@ -64,14 +68,19 @@ export default function Home() {
                 </button>
 
                 <div
-                  className={`overflow-hidden transition-all ${
-                    openIndex === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                  className={`overflow-hidden transition-all duration-300 ${
+                    openIndex === index ? "max-h-96 opacity-100 mt-2" : "max-h-0 opacity-0"
                   }`}
                 >
-                  <p className="text-gray-700 mt-2">{faq.answer}</p>
+                  <p className="text-gray-700">{faq.answer}</p>
                   {faq.link && (
                     <p className="mt-2">
-                      <a href={faq.link} target="_blank" rel="noopener noreferrer" className="text-emerald-600 underline">
+                      <a
+                        href={faq.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-emerald-600 underline"
+                      >
                         {faq.linkText}
                       </a>
                     </p>
@@ -80,7 +89,10 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
+        </main>
+
+        {/* Footer */}
+        <Footer />
       </div>
     </>
   );

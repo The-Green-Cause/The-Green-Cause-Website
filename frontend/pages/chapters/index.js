@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
 import { useState, useEffect } from "react";
 
 export default function Chapters() {
@@ -20,7 +21,7 @@ export default function Chapters() {
     },
     "new-jersey": {
       name: "New Jersey",
-      location: "Union, NJ",
+      location: "South Brunswick, NJ",
       description:
         "Driving environmental change in the heart of the garden state.",
       image: "/images/chapters/new-york.jpg",
@@ -59,6 +60,7 @@ export default function Chapters() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
