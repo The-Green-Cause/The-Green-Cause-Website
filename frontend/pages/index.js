@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import Head from "next/head";
 import Link from 'next/link';
 import ImageCarousel from '../components/carousel';
@@ -169,6 +170,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

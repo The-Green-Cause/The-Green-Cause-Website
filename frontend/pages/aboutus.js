@@ -1,4 +1,5 @@
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import Head from "next/head";
 
 export default function AboutUs() {
@@ -94,6 +95,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
         </>
     );

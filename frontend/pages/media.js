@@ -1,4 +1,5 @@
-import Navbar from "../components/navbar"; // Adjust path as needed
+import Footer from "../components/footer";
+import Navbar from "../components/navbar"; 
 import Image from "next/image"
 import Link from "next/link"
 
@@ -102,6 +103,7 @@ export default function MediaPage() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
@@ -154,6 +156,7 @@ function MediaCard({ title, description, image, links, link_texts, location, dat
           <p className="text-gray-400 italic">No media link available</p>
         )}
       </div>
+      
     </div>
   )
 }
