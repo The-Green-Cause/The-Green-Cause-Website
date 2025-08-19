@@ -17,12 +17,12 @@ export default function Donate() {
         <Navbar />
         
         {/* Hero Section */}
-        <div className="flex justify-center items-center bg-emerald-700 w-full h-[60vh] overflow-hidden">
+        <div className="flex justify-center items-center bg-lightTan w-full h-[60vh] overflow-hidden">
           <div className="text-center ml-22 z-10">
-            <p className="text-white text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-6xl mr-1 ml-1 font-lora_semibold">
+            <p className="text-emerald-700 text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-6xl mr-1 ml-1 font-lora_semibold">
               Your Support Matters
             </p>
-            <p className="text-white text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-3xl mt-5 font-poppins">
+            <p className="text-emerald-500 text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-3xl mt-5 font-poppins">
               Join us in making a difference by donating today!
             </p>
           </div>
@@ -30,7 +30,7 @@ export default function Donate() {
 
         {/* Donation Information Section */}
         <div className="flex flex-col items-center my-20 px-6 text-center">
-          <h3 className="font-merriweather_italic text-3xl md:text-4xl mb-6 text-emerald-700">
+          <h3 className="font-merriweather_italic text-3xl md:text-4xl mb-6 text-teal-500">
             Interested in supporting? Please donate below!
           </h3>
           <p className="max-w-4xl text-lg leading-relaxed mb-6">
@@ -44,7 +44,7 @@ export default function Donate() {
           </p>
 
           {/* Donation Button */}
-          <Link href="https://hcb.hackclub.com/donations/start/the-green-cause" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block text-black font-bold bg-white py-3 px-8 rounded-full text-xl font-lora_semibold hover:bg-emerald-700 hover:text-white transition duration-300">
+          <Link href="https://hcb.hackclub.com/donations/start/the-green-cause" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block text-black font-bold bg-white py-3 px-8 rounded-full text-xl font-lora_semibold hover:bg-brown-500 hover:text-white transition duration-300">
             Donate Now
           </Link>
         </div>
