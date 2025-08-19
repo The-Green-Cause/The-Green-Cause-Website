@@ -61,9 +61,6 @@ export default function Home() {
     <p className="text-emerald-700 text-xl md:text-2xl lg:text-3xl xl:text-3xl mt-5 font-poppins max-w-2xl">
       Planting the seeds of knowledge to educate and empower generations to a thriving earth and sustainable future
     </p>
-    <button className="mt-8 text-lightTan font-bold bg-brown-500 py-2 px-5 rounded font-lora_semibold">
-      <Link href="/aboutus">Join Us!</Link>
-    </button>
   </div>
 
   {/* Carousel */}

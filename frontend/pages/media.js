@@ -83,9 +83,9 @@ export default function MediaPage() {
     <div>
       <Navbar />
       <div className="max-w-5xl mx-auto p-6">
-        <h1 className="text-4xl font-bold mb-4 text-green-700">Media Features</h1>
-        <p className="text-gray-600 mb-10">
-          Explore highlights of our community outreach and environmental action.
+        <h1 className="text-4xl font-bold mb-4 text-green-700 text-center">Media Features</h1>
+        <p className="text-gray-600 mb-10 text-center">
+          These are some of the events that The Green Cause participated in, ranging from classroom presentations to speaking engagements like festivals (both in person and virtual). If you are interested in The Green Cause participating in your event or other media inquiries, contact us at thegreencauseinitiative@gmail.com. 
         </p>
 
         <div className="grid gap-10">
