@@ -149,7 +149,7 @@ export default function Lessons() {
             <div style={{ fontFamily: "'Inter', sans-serif" }} className="h-[100vh]">
                 <Navbar/>
                 <div className="text-black px-20 py-10 bg-white">
-                    <p className="text-center font-bold text-5xl mb-5 font-lora_semibold">Our Lessons</p>
+                    <p className="text-center font-fredoka text-5xl mb-5 font-lora_semibold">Our Lessons</p>
                     <p className="text-left font-regular text-xl">The Green Cause’s 30+ lessons cover a wide array of environmental topics from introducing key themes like global warming and deforestation to more detailed presentations like sharks and chemical pollution. To accompany the lessons, they will come with interactive materials such as videos, games, or other relevant links. We make sure to create each lesson using our three pillars (engagement, solutions-based learning, and considering the impacts). For more information on the pillars, read the About Us section. 
                     <br/>                    <br/>
                     The lesson creating process consists of members creating an outline, which includes target audience, lesson layout, and accompanying interactive activities. After approval from chapter leads, the members use any feedback given to create the lessons which are then reviewed using our rubric. In order to ensure our lessons are of quality, we are establishing a Teachers’ Lesson Review where formal educators and those with education credentials can provide feedback to our lessons. If you are interested in joining, please fill out this form

@@ -74,7 +74,7 @@ export default function Home() {
 
         {/* Who We Are Section */}
         <div className="flex flex-col items-center my-10 px-6 text-center">
-          <h3 className="font-merriweather_italic text-3xl md:text-3xl mb-6 text-emerald-700">
+          <h3 className="font-fredoka text-3xl md:text-3xl mb-6 text-emerald-700">
             Who We Are
           </h3>
           <p className="max-w-4xl text-lg leading-relaxed">
@@ -125,7 +125,7 @@ export default function Home() {
 
         {/* Our Sponsors Section */}
         <div className="flex flex-col items-center my-20 px-6 text-center">
-          <h3 className="font-merriweather_italic text-3xl md:text-4xl mb-10 text-emerald-700">
+          <h3 className="font-fredoka text-3xl md:text-4xl mb-10 text-emerald-700">
             Our Sponsors
           </h3>
           <div
@@ -145,7 +145,7 @@ export default function Home() {
 
         {/* Our Collaborators Section */}
         <div className="flex flex-col items-center my-20 px-4 sm:px-6 md:px-8 text-center">
-          <h3 className="font-merriweather_italic text-3xl md:text-3xl mb-10 text-emerald-700">
+          <h3 className="font-fredoka text-3xl md:text-3xl mb-10 text-emerald-700">
             Our Collaborators
           </h3>
 

@@ -52,7 +52,7 @@ export default function Home() {
 
         {/* Main Content */}
         <main className="flex-grow max-w-3xl mx-auto mt-10 px-6 w-full">
-          <h1 className="font-merriweather italic text-3xl text-center mb-8 text-emerald-700">
+          <h1 className="font-fredoka text-4xl text-center mb-8 text-emerald-700">
             Frequently Asked Questions
           </h1>
 

@@ -24,7 +24,7 @@ export default function NewJerseyChapter() {
             {/* Left: Chapter Lead & Contact */}
             <div className="bg-green-100 p-8">
               <h2 className="text-2xl font-bold mb-4">Chapter Lead</h2>
-              <p className="mb-4"><strong>Name:</strong> Harshanna Prasanna</p>
+              <p className="mb-4"><strong>President:</strong> Harshanna Prasanna</p>
 
               <h3 className="text-xl font-semibold mb-2">Connect with Us</h3>
               <div className="flex space-x-6 mt-4">
@@ -41,23 +41,12 @@ export default function NewJerseyChapter() {
             <div className="p-8">
               <h2 className="text-2xl font-bold mb-4">About the Chapter</h2>
               <p className="mb-6">
-                The New Jersey Chapter is our first branch, located in Union. We&apos;re empowering local youth to lead sustainability efforts through education, events, and grassroots movements.
+                The New Jersey Chapter is our domestic branch, located in South Brunswick. We&apos;re empowering local youth to lead sustainability efforts through education, events, and grassroots movements.
               </p>
 
               <h2 className="text-2xl font-bold mb-4">Recent Achievements</h2>
               <ul className="space-y-4">
-                <li>
-                  <p className="font-semibold">March 11, 2025 – Tree Planting Campaign</p>
-                  <p>
-                    One of the chapter leaders, Roy Odusote, at the University of Ibadan hosted a workshop with about 175 students in attendance at the community high school in Ajaba, Oyo State. The content focused on eco-restoration and discussed the ecological state in Nigeria and its impact on the community (climate, soil quality, biodiversity, water, and health). Funding from Arch Foundation will help improve future workshops.
-                  </p>
-                </li>
-                <li>
-                  <p className="font-semibold">February 15, 2025 – Sustainability Workshop</p>
-                  <p>
-                    Hosted our first workshop in the botanical garden at the University of Ibadan. Funding reserved space for 300+ community members and delivered impactful presentations on eco-restoration.
-                  </p>
-                </li>
+                
               </ul>
             </div>
 
