@@ -14,7 +14,7 @@ export default function AboutUs() {
             <div>
                 <Navbar />
                 <div className="max-w-2xl mx-auto text-center mt-10 px-6">
-                    <h1 className="text-3xl font-semibold font-lora text-emerald-700 mb-6">
+                    <h1 className="text-3xl font-fredoka font-lora text-emerald-700 mb-6">
                         ORIGINS
                     </h1>
                     <p className="text-gray-700 leading-relaxed">
@@ -32,7 +32,7 @@ export default function AboutUs() {
                 </div>
 
                 <div className="text-center mt-10 px-6">
-                    <h1 className="text-3xl font-semibold font-lora mb-10 text-emerald-600">
+                    <h1 className="text-3xl font-fredoka font-lora mb-10 text-emerald-600">
                         OUR THREE PILLARS
                     </h1>
                     <div className="grid md:grid-cols-3 gap-8">

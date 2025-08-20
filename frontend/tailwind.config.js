@@ -16,6 +16,7 @@ module.exports = {
         lora_semibold: ['"Lora"', "sans-serif"],
         poppins: ['"Poppins"', "sans-serif"],
         cabin: ['"Cabin"', "sans-serif"],
+        fredoka: ['"Fredoka"', 'sans-serif'],
       },
       keyframes: {
         marquee: {

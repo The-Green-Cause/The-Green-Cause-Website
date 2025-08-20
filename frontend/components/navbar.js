@@ -28,7 +28,9 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center px-5">
           <div className="h-14 w-14 rounded">
-            <Image src="/logo.png" alt="logo" width={5000} height={5000} />
+            <Link href="/">
+              <Image src="/logo.png" alt="logo" width={5000} height={5000} />
+            </Link>
           </div>
         </div>
 

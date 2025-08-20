@@ -18,7 +18,7 @@ export default function Contact() {
 
         {/* Main Content */}
         <main className="flex-grow flex flex-col items-center px-4 py-10 w-full">
-          <h1 className="text-center text-5xl mb-10 font-lora_semibold text-emerald-700">
+          <h1 className="text-center text-5xl mb-10 font-fredoka text-emerald-700">
             CONTACT US
           </h1>
 

@@ -41,7 +41,9 @@ export default function NigeriaChapter() {
             {/* Left: Chapter Lead & Contact + Carousel */}
             <div className="bg-green-100 p-8 flex flex-col">
               <h2 className="text-2xl font-bold mb-4">Chapter Lead</h2>
-              <p className="mb-4"><strong>Name:</strong> Roy Odusote</p>
+              <p className="mb-4"><strong>President:</strong> Roy Odusote</p>
+              <p className="mb-4">Odusote Roy Akorede is an ambitious final-year student at Ajayi Crowther University. He channels genuine passion about environmental awareness and sustainability into his community endeavors. Through his chapter, he aims to educate and inspire his community about the vital role our ecosystem serves in our lives. Our Green Cause Nigeria chapter is guided by a leader whose vision is to inspire collective commitment to protecting and nurturing our environment. Through education, collaborative initiatives, and promotion of sustainable practices, he works to empower individuals to view environmental protection not just as a responsibility, but as a shared legacy we must preserve for future generations.</p>
+              <p className="mb-4"><strong>General Members:</strong> Ayun Lolade, Tawio Ogunlade, Kenny Ogunlade, Edwin Charming</p>
 
               <h3 className="text-xl font-semibold mb-2">Connect with Us</h3>
               <div className="flex space-x-6 mt-4 mb-8">
@@ -80,7 +82,7 @@ export default function NigeriaChapter() {
             <div className="p-8">
               <h2 className="text-2xl font-bold mb-4">About the Chapter</h2>
               <p className="mb-6">
-                The Nigeria Chapter is our first international branch, located in Oyo. We&apos;re empowering local youth to lead sustainability efforts through education, events, and grassroots movements.
+                Green Cause Nigeria is dedicated to empowering youth to take an active role in protecting their environment. Through engaging educational presentations, the chapter encourages students to reflect on their environmental choices and understand the direct impact of local environmental challenges (i.e. deforestation) on their quality of life. Their work spans eco-restoration projects, education on sustainable practices, sun protection, and overall wellness, alongside hands-on stewardship events that clean up and revitalize local spaces. Together, they are just beginning to foster a culture of responsibility for a healthier environment and community. The chapter&apos;s impact has been recognized locally, with multiple school districts inviting them to host educational sessions at their institutions.
               </p>
 
               <h2 className="text-2xl font-bold mb-4">Recent Achievements</h2>
