@@ -30,7 +30,7 @@ export default function Donate() {
 
         {/* Donation Information Section */}
         <div className="flex flex-col items-center my-20 px-6 text-center">
-          <h3 className="font-merriweather_italic text-3xl md:text-4xl mb-6 text-teal-500">
+          <h3 className="font-fredoka text-3xl md:text-4xl mb-6 text-teal-500">
             Interested in supporting? Please donate below!
           </h3>
           <p className="max-w-4xl text-lg leading-relaxed mb-6">
