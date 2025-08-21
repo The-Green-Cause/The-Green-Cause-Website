@@ -7,18 +7,18 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // Mobile main menu
-  const [isAboutOpen, setIsAboutOpen] = useState(false); // Mobile About dropdown
-  const [isAboutHover, setIsAboutHover] = useState(false); // Desktop hover state
+  const [openDropdown, setOpenDropdown] = useState(null); // Track which mobile dropdown is open
+  const [hoverDropdown, setHoverDropdown] = useState(null); // Track which desktop dropdown is hovered
   const hoverTimeout = useRef(null);
 
-  const handleMouseEnter = () => {
+  const handleMouseEnter = (key) => {
     clearTimeout(hoverTimeout.current);
-    setIsAboutHover(true);
+    setHoverDropdown(key);
   };
 
   const handleMouseLeave = () => {
     hoverTimeout.current = setTimeout(() => {
-      setIsAboutHover(false);
+      setHoverDropdown(null);
     }, 150);
   };
 
@@ -38,9 +38,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-8">
           <NavLinks
             desktop
-            isAboutOpen={isAboutOpen}
-            setIsAboutOpen={setIsAboutOpen}
-            isAboutHover={isAboutHover}
+            hoverDropdown={hoverDropdown}
             handleMouseEnter={handleMouseEnter}
             handleMouseLeave={handleMouseLeave}
           />
@@ -62,8 +60,8 @@ export default function Navbar() {
         <div className="md:hidden bg-black px-6 pb-4 space-y-2">
           <NavLinks
             mobile
-            isAboutOpen={isAboutOpen}
-            setIsAboutOpen={setIsAboutOpen}
+            openDropdown={openDropdown}
+            setOpenDropdown={setOpenDropdown}
           />
         </div>
       )}
@@ -74,15 +72,15 @@ export default function Navbar() {
 function NavLinks({
   mobile = false,
   desktop = false,
-  isAboutOpen,
-  setIsAboutOpen,
-  isAboutHover,
+  openDropdown,
+  setOpenDropdown,
+  hoverDropdown,
   handleMouseEnter,
   handleMouseLeave,
 }) {
   const baseStyle =
-    "text-white font-cabin font-semibold hover:text-green-200 transition-colors duration-200";
-  const mobileStyle = mobile ? "block py-2" : "";
+    'text-white font-cabin font-semibold hover:text-green-200 transition-colors duration-200';
+  const mobileStyle = mobile ? 'block py-2' : '';
 
   return (
     <>
@@ -90,53 +88,59 @@ function NavLinks({
         Home
       </Link>
 
-        {/* About Us with Dropdown */}
-        <div
-          className={`relative ${mobile ? "" : "group"}`}
-          onMouseEnter={desktop ? handleMouseEnter : undefined}
-          onMouseLeave={desktop ? handleMouseLeave : undefined}
+      {/* About Us with 1 dropdown link */}
+      <DropdownWrapper
+        label="About Us"
+        href="/aboutus"
+        mobile={mobile}
+        desktop={desktop}
+        dropdownKey="about"
+        openDropdown={openDropdown}
+        setOpenDropdown={setOpenDropdown}
+        hoverDropdown={hoverDropdown}
+        handleMouseEnter={handleMouseEnter}
+        handleMouseLeave={handleMouseLeave}
+      >
+        <Link
+          href="/our-team"
+          className="block px-4 py-2 text-white hover:bg-green-400 transition-colors duration-200"
         >
-          {/* Main link */}
-          <Link href="/aboutus" className={`${baseStyle} ${mobileStyle} flex items-center gap-1`}>
-            About Us
-          </Link>
+          Our Team
+        </Link>
+      </DropdownWrapper>
 
-          {/* Mobile arrow toggle */}
-          {mobile && (
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                setIsAboutOpen(!isAboutOpen);
-              }}
-              className="text-white ml-1"
-            >
-              <ChevronDown size={16} className={`${isAboutOpen ? "rotate-180" : ""} transition-transform`} />
-            </button>
-          )}
-
-          {/* Desktop Dropdown */}
-          {desktop && isAboutHover && (
-            <div
-              className="absolute left-0 top-full mt-2 bg-teal-600 shadow-lg rounded animate-fadeIn w-40 z-[9999]"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <DropdownLinks />
-            </div>
-          )}
-
-          {/* Mobile Dropdown */}
-          {mobile && isAboutOpen && (
-            <div className="pl-4 animate-fadeIn">
-              <DropdownLinks mobile />
-            </div>
-          )}
-        </div>
-
-
-      <Link href="/chapters" className={`${baseStyle} ${mobileStyle}`}>
-        Chapters
-      </Link>
+      {/* Join with 3 dropdown links */}
+      <DropdownWrapper
+        label="Join"
+        href="/aboutus#join"
+        mobile={mobile}
+        desktop={desktop}
+        dropdownKey="join"
+        openDropdown={openDropdown}
+        setOpenDropdown={setOpenDropdown}
+        hoverDropdown={hoverDropdown}
+        handleMouseEnter={handleMouseEnter}
+        handleMouseLeave={handleMouseLeave}
+      >
+        <Link
+          href="/volunteer"
+          className="block px-4 py-2 text-white hover:bg-green-400 transition-colors duration-200"
+        >
+          Volunteer
+        </Link>
+        <Link
+          href="/apply"
+          className="block px-4 py-2 text-white hover:bg-green-400 transition-colors duration-200"
+        >
+          Apply for Our Team
+        </Link>
+        <Link
+          href="/chapters"
+          className="block px-4 py-2 text-white hover:bg-green-400 transition-colors duration-200"
+        >
+          Chapters
+        </Link>
+      </DropdownWrapper>
       <Link href="/lessons" className={`${baseStyle} ${mobileStyle}`}>
         Lessons
       </Link>
@@ -156,20 +160,66 @@ function NavLinks({
   );
 }
 
-function DropdownLinks({ mobile = false }) {
+function DropdownWrapper({
+  label,
+  href,
+  children,
+  mobile,
+  desktop,
+  dropdownKey,
+  openDropdown,
+  setOpenDropdown,
+  hoverDropdown,
+  handleMouseEnter,
+  handleMouseLeave,
+}) {
   const baseStyle =
-    "block px-4 py-2 text-white hover:bg-green-400 transition-colors duration-200";
+    'text-white font-cabin font-semibold hover:text-green-200 transition-colors duration-200';
+  const mobileStyle = mobile ? 'block py-2' : '';
+
   return (
-    <div>
-      <Link href="#" className={baseStyle}>
-        Volunteer
+    <div
+      className={`relative ${mobile ? '' : 'group'}`}
+      onMouseEnter={desktop ? () => handleMouseEnter(dropdownKey) : undefined}
+      onMouseLeave={desktop ? handleMouseLeave : undefined}
+    >
+      <Link href={href} className={`${baseStyle} ${mobileStyle} flex items-center gap-1`}>
+        {label}
       </Link>
-      <Link href="#" className={baseStyle}>
-        Join
-      </Link>
-      <Link href="#" className={baseStyle}>
-        Chapters
-      </Link>
+
+      {/* Mobile arrow toggle */}
+      {mobile && (
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            setOpenDropdown(openDropdown === dropdownKey ? null : dropdownKey);
+          }}
+          className="text-white ml-1"
+        >
+          <ChevronDown
+            size={16}
+            className={`${
+              openDropdown === dropdownKey ? 'rotate-180' : ''
+            } transition-transform`}
+          />
+        </button>
+      )}
+
+      {/* Desktop Dropdown */}
+      {desktop && hoverDropdown === dropdownKey && (
+        <div
+          className="absolute left-0 top-full mt-2 bg-teal-600 shadow-lg rounded animate-fadeIn w-40 z-[9999]"
+          onMouseEnter={() => handleMouseEnter(dropdownKey)}
+          onMouseLeave={handleMouseLeave}
+        >
+          {children}
+        </div>
+      )}
+
+      {/* Mobile Dropdown */}
+      {mobile && openDropdown === dropdownKey && (
+        <div className="pl-4 animate-fadeIn">{children}</div>
+      )}
     </div>
   );
 }
