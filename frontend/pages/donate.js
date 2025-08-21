@@ -31,7 +31,7 @@ export default function Donate() {
         {/* Donation Information Section */}
         <div className="flex flex-col items-center my-20 px-6 text-center">
           <h3 className="font-fredoka text-3xl md:text-4xl mb-6 text-teal-500">
-            Interested in supporting? Please donate below!
+            Interested in supporting? Please Donate Below!
           </h3>
           <p className="max-w-4xl text-lg leading-relaxed mb-6">
             Any and all donations go towards helping our team of dedicated individuals make your experience as a supporter greater. 

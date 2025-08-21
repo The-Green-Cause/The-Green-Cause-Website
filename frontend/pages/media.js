@@ -32,7 +32,7 @@ We wrapped up the day by designing posters for recycling, composting, and trash 
   },
   {
     title: "📺 In The Know Climate Changemakers: Docuseries ",
-    description: null,
+    description: "In October of 2022, there was a docuseries done on The Green Cause! Coat Check Creative created a series called In The Know Climate Changemakers, where they highlight the work of young people involved in climate, including The Green Cause.  In the docuseries, they did a two part segment where they interviewed founder Frida Ruiz and then showed a team meeting between the officers at the time. ",
     links: ["https://youtu.be/6Ggb7QJJHVI?si=DSQ0nypGK331Y_Zs"],
     link_texts: ["View More"],
     location: null,
@@ -41,8 +41,17 @@ We wrapped up the day by designing posters for recycling, composting, and trash 
   },
   {
     title: "2021 Blue Ridge Eco Fair",
-    description: null,
+    description: "The initial start of our participation in annual earth day fairs, The Green Cause joined Blue Ridge’s Eco Fair by having founders Bianca Palomino and Frida Ruiz speak on how youth’s involvement in environmental education and showcasing a sample student lesson about composting by Andrea Falar and Leo Sommerheil. ",
     links: ["https://www.youtube.com/watch?v=9gMcSEi2LtY"],
+    link_texts: ["View More"],
+    location: null,
+    date: null,
+    image: null, 
+  },
+  {
+    title: "Discussing Climate-Based Education with Frida Ruiz: IceBreakers Podcast",
+    description: "A youth to youth collaboration where founder Frida Ruiz was interviewed by fellow youth environmentalist and podcaster Anya Bansal about environmental education. ",
+    links: ["https://podcasts.apple.com/us/podcast/discussing-climate-based-education-with-frida-ruiz/id1561095802?i=1000585270130 "],
     link_texts: ["View More"],
     location: null,
     date: null,
@@ -59,7 +68,7 @@ We wrapped up the day by designing posters for recycling, composting, and trash 
   },
   {
     title: "NJ Climate Education Summit 2022",
-    description: null,
+    description: "The Green Cause got to present at both the 2021 and 2022 NJ Climate Education Youth Summit, showcasing their content by both co-founders giving a presentation on biodiversity and partaking in a Q & A panel respectively. ",
     links: ["https://blogs.cuit.columbia.edu/edsdcsd/2022/01/18/new-jersey-climate-education-summit-2022/"],
     link_texts: ["View More"],
     location: null,
@@ -68,7 +77,7 @@ We wrapped up the day by designing posters for recycling, composting, and trash 
   },
   {
     title: "International Conference for Sustainable Development (ICSD) 2020",
-    description: null,
+    description: "During the peak of coronavirus, The Green Cause had their first virtual speaking engagement as part of the youth component of the International Conference for Sustainable Development (ICSD) 2020. Both co-founders Bianca Palomino and Frida Ruiz were part of a Q & A panel with 6 other environmental oriented youth-led organizations. ",
     links: ["https://ic-sd.org/events/icsd-2020/"],
     link_texts: ["View More"],
     location: null,
@@ -138,7 +147,7 @@ function MediaCard({ title, description, image, links, link_texts, location, dat
           <p className="text-gray-700 whitespace-pre-line mb-4">{description}</p>
         )}
 
-        {links && links.length > 0 ? (
+        {links && links.length > 0 && (
           <div className="flex flex-col gap-2">
             {links.map((link, i) => (
               <Link
@@ -152,9 +161,8 @@ function MediaCard({ title, description, image, links, link_texts, location, dat
               </Link>
             ))}
           </div>
-        ) : (
-          <p className="text-gray-400 italic">No media link available</p>
         )}
+
       </div>
       
     </div>
