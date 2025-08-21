@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Lessons() {
     const [lessonsData, setLessonsData] = useState([]);
@@ -155,8 +156,16 @@ export default function Lessons() {
                     The lesson creating process consists of members creating an outline, which includes target audience, lesson layout, and accompanying interactive activities. After approval from chapter leads, the members use any feedback given to create the lessons which are then reviewed using our rubric. In order to ensure our lessons are of quality, we are establishing a Teachers’ Lesson Review where formal educators and those with education credentials can provide feedback to our lessons. If you are interested in joining, please fill out this form
                     <br/><br/>
                     </p>
-                    <div className="flex">
-                        <button onClick={() => {router.push("https://drive.google.com/file/d/1f2uzaEGg79h6Epgs47VpiACov9JNMBW1/view?usp=sharing")}} className="mx-auto bg-[#35B6FF] text-white text-center px-5 py-1 rounded-md mb-[80px]">Flyer</button>
+                    <div className="flex justify-center">
+                        <Link
+                            href="https://forms.gle/etF2GquiRgZYmKee7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button className="bg-[#35B6FF] text-white text-center px-5 py-1 rounded-md mb-[80px]">
+                                Teacher Lesson Review Form
+                            </button>
+                        </Link>
                     </div>
                     <p>
                     <br/><br/>
