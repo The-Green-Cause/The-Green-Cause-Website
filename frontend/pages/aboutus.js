@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutUs() {
     return (
@@ -73,7 +74,7 @@ export default function AboutUs() {
                         ].map((pillar, index) => (
                             <div
                                 key={index}
-                                className="bg-emerald-600 text-white p-6 rounded-xl shadow-lg"
+                                className="bg-[#c5cfad] text-white p-6 rounded-xl shadow-lg"
                             >
                                 <h2 className="text-xl font-semibold mb-3">{pillar.title}</h2>
                                 <p className="text-sm leading-relaxed">{pillar.content}</p>
@@ -83,7 +84,7 @@ export default function AboutUs() {
                 </div>
 
                 {/* JOIN US Section */}
-                <div id="join" className="bg-emerald-700 text-white mt-16 py-16 px-6">
+                <div id="join" className="bg-[#3e5134] text-white mt-16 py-16 px-6">
                     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
                         {/* Left Text Block */}
                         <div className="md:w-1/2 text-center">
@@ -101,15 +102,13 @@ export default function AboutUs() {
 
                         {/* Right Button Block */}
                         <div className="md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
-                            <a
-                                href="https://docs.google.com/forms/d/e/1FAIpQLSdLRDZQk9B-d8kuFSL66o5g_Gm5P0P5Z3xr3WERNX4ewrhtYA/viewform"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                            <Link
+                                href="/joinus"
                             >
-                                <button className="bg-white text-emerald-700 text-xl font-bold px-10 py-5 rounded-xl shadow-xl hover:bg-gray-100 transition-all">
+                                <button className="bg-white text-[#3e5134] text-xl font-bold px-10 py-5 rounded-xl shadow-xl hover:bg-gray-100 transition-all">
                                     Join Us!
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

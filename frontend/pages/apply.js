@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Navbar from "../components/navbar"; 
 import Footer from "../components/footer";
+import Link from "next/link";
+import { FaUsers } from "react-icons/fa";
 
 export default function Apply() {
   return (
@@ -17,7 +19,10 @@ export default function Apply() {
 
         {/* Content Section */}
         <main className="flex-grow container mx-auto px-6 py-12 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-teal-600 mb-6">
+          {/* Icon */}
+          <FaUsers className="text-green-700 w-12 h-12 mx-auto mb-4 animate-bounce" />
+
+          <h1 className="text-3xl md:text-4xl font-fredoka text-green-800 mb-6">
             Apply to Join Our Team
           </h1>
 
@@ -29,14 +34,14 @@ export default function Apply() {
             to our mission of creating a greener future.
           </p>
 
-          <a
+          <Link
             href="https://forms.gle/Au6DcWvYAs8iWJvy7"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-teal-500 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-teal-600 transition-colors"
+            className="inline-block bg-brown-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors"
           >
             Apply Now
-          </a>
+          </Link>
         </main>
         <Footer />
       </div>

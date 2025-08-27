@@ -38,7 +38,7 @@ export default function Chapters() {
       <main className="min-h-screen bg-gray-50 py-12 px-6">
         {/* Intro Section */}
         <section className="max-w-6xl mx-auto mb-12">
-          <h1 className="text-5xl font-fredoka text-center mb-6">Chapters</h1>
+          <h1 className="text-5xl font-fredoka text-green-800 text-center mb-6">Chapters</h1>
           <p className="text-gray-700 leading-relaxed">
             Founded in 2020, The Green Cause is an environmental nonprofit organization based around promoting environmental activism among the youth and larger communities through the making of various content, such as lessons and social media posts. To strengthen our impact, we have recently launched our brand new chapter structure, which allows people to spread environmental awareness in their own communities as part of The Green Cause. This gives many individuals a chance to connect with their cities more closely and form a strong team to combat climate change. Individuals who are involved in a chapter have the autonomy to do what they think is best to fit the interests of their community in hopes to educate and inspire more people to join the cause. We, as the board of The Green Cause, truly believe that the involvement of every person is so crucial to create change in this world, which is what we hope to accomplish with this launch. We hope that you too can be a leader, and work with us to change the world for the better.
           </p>
