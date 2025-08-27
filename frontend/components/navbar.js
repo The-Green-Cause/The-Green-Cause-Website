@@ -112,7 +112,7 @@ function NavLinks({
       {/* Join with 3 dropdown links */}
       <DropdownWrapper
         label="Join"
-        href="/aboutus#join"
+        href="/joinus"
         mobile={mobile}
         desktop={desktop}
         dropdownKey="join"
