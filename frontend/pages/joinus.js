@@ -8,11 +8,11 @@ import Footer from "../components/footer";
 export default function JoinUsPage() {
   const items = [
     {
-      title: "Volunteer",
+      title: "Short Term Oppurtunities",
       icon: HeartHandshake,
       blurb:
         "Pitch in at events, help with outreach, or lend your skills remotely—flexible commitments welcome.",
-      cta: { label: "Sign up to Volunteer", href: "/volunteer" },
+      cta: { label: "Sign up", href: "/short_term_oppurtunities" },
     },
     {
       title: "Join the Internal Team",
