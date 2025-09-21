@@ -55,14 +55,15 @@ export default function Environmental101() {
         </p>
 
         <p className="text-gray-700 leading-relaxed">
-            Not sure what topic to write on? Check out our topic ideas {""}
+            Not sure what topic to write on? Look at the following 
+  {""}
             <a
-                href="https://google.com"
-                className="text-emerald-700 underline hover:text-emerald-900"
+              href="https://google.com"
+              className="text-emerald-700 underline hover:text-emerald-900"
             >
-                outline
+              document
             </a>{" "} 
-            for inspiration{" "}.
+            for ideas.{" "}.
         </p>
       </div>
 
