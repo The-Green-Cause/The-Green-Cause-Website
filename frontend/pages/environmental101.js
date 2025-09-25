@@ -47,6 +47,8 @@ export default function Environmental101() {
             To fill out the form, you should have a research{" "}
             <a
                 href="https://docs.google.com/document/d/1hsh0CyR3dC3mGV42Skuzucfi8JVRdrHgCN68Lp0JFwQ/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-emerald-700 underline hover:text-emerald-900"
             >
                 outline
@@ -56,14 +58,16 @@ export default function Environmental101() {
 
         <p className="text-gray-700 leading-relaxed">
             Not sure what topic to write on? Look at the following 
-  {""}
+  {" "}
             <a
               href="https://docs.google.com/document/d/19s7JS0d0leFpgl-9amiocUWGLChV8NmXL4zyNbPE-bM/edit?usp=sharing"
               className="text-emerald-700 underline hover:text-emerald-900"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               document
             </a>{" "} 
-            for ideas.{" "}.
+            for ideas.{" "}
         </p>
       </div>
 
