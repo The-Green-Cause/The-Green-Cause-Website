@@ -41,7 +41,7 @@ export default function NewJerseyChapter() {
             <div className="p-8">
               <h2 className="text-2xl font-bold mb-4">About the Chapter</h2>
               <p className="mb-6">
-                The New Jersey Chapter is our domestic branch, located in South Brunswick. We&apos;re empowering local youth to lead sustainability efforts through education, events, and grassroots movements.
+                The South Brunswick Chapter of The Green Cause is run by a board of high schoolers who are focused on educating our community about environmental issues. As a chapter we have had 3 booths at local festivals and also have worked with local libraries to run workshops with young kids. Our goals are to bring people closer to the environment by shining light on reserves and parks and getting people out in nature. We promote these values through our social media. As a team we hope to hold our own fundraisers this year.
               </p>
 
               <h2 className="text-2xl font-bold mb-4">Recent Achievements</h2>
