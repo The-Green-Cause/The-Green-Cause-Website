@@ -83,35 +83,7 @@ export default function AboutUs() {
                     </div>
                 </div>
 
-                {/* JOIN US Section */}
-                <div id="join" className="bg-[#3e5134] text-white mt-16 py-16 px-6">
-                    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
-                        {/* Left Text Block */}
-                        <div className="md:w-1/2 text-center">
-                            <h1 className="text-3xl font-semibold font-lora mb-6">JOIN US</h1>
-                            <p className="leading-relaxed text-lg mb-4">
-                                As we expand our organization across different chapters, we are excited to grow our team!
-                                Our goal is to have chapter coordinators who can support various time zones, geographical
-                                differences, and chapter-specific needs.
-                            </p>
-                            <p className="leading-relaxed text-lg">
-                                If you’re interested in getting more involved, fill out the form below!
-                                We review applications on a rolling basis and typically respond every two weeks.
-                            </p>
-                        </div>
-
-                        {/* Right Button Block */}
-                        <div className="md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
-                            <Link
-                                href="/joinus"
-                            >
-                                <button className="bg-white text-[#3e5134] text-xl font-bold px-10 py-5 rounded-xl shadow-xl hover:bg-gray-100 transition-all">
-                                    Join Us!
-                                </button>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
+                
                 <Footer/>
             </div>
         </>
