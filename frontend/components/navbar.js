@@ -123,7 +123,7 @@ function NavLinks({
         handleMouseLeave={handleMouseLeave}
       >
         <Link
-          href="/volunteer"
+          href="/volunteer_opportunities"
           className="block px-4 py-2 text-white hover:bg-green-400 transition-colors duration-200"
         >
           Volunteer

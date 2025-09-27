@@ -8,11 +8,11 @@ import Footer from "../components/footer";
 export default function JoinUsPage() {
   const items = [
     {
-      title: "Short Term Oppurtunities",
+      title: "Volunteer Opportunities",
       icon: HeartHandshake,
       blurb:
         "Pitch in at events, help with outreach, or lend your skills remotely—flexible commitments welcome.",
-      cta: { label: "Sign up", href: "/short_term_oppurtunities" },
+      cta: { label: "Sign up", href: "/volunteer_opportunities" },
     },
     {
       title: "Join the Internal Team",
@@ -26,7 +26,7 @@ export default function JoinUsPage() {
       icon: Flag,
       blurb:
         "Bring our mission to your school or city. We’ll share a starter kit, training, and ongoing support.",
-      cta: { label: "Launch a Chapter", href: "/chapters/start" },
+      cta: { label: "Launch a Chapter", href: "/chapters" },
     },
   ];
 
