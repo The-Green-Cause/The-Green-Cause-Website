@@ -27,21 +27,31 @@ export default function Apply() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8">
-            We&apos;re always looking for passionate individuals who want to make a
-            difference in environmental advocacy and sustainability. As a team
-            member of <span className="font-semibold">The Green Cause</span>, 
-            you&apos;ll help lead initiatives, support local chapters, and contribute 
-            to our mission of creating a greener future.
+            We&apos;re always looking for passionate individuals who want to make a difference in environmental advocacy and sustainability! As part of our internal team, you&apos;ll help lead initiatives, support local chapters, and contribute to our mission of creating a greener future. You can either apply to be a team lead to join one of our two internal teams, our environmental education or social media teams. As team lead, you will be able to gain leadership experience and help create the vision of our organization. As a team member, you get the chance to create content that will receive engagement from schools, educators, STEM programs, camps, public events, and our online audiences! Creating social media content and our environmental educational curriculum is vital to growing our organization. Start by filling out one of the two forms depending on how you want to be involved: 
+
           </p>
 
-          <Link
-            href="https://forms.gle/Au6DcWvYAs8iWJvy7"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-brown-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors"
-          >
-            Apply Now
-          </Link>
+          <div className="flex flex-col items-center gap-4">
+            <Link
+              href="https://forms.gle/3FY6khB5ETa25iHu7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-brown-500 hover:bg-brown-400 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors"
+            >
+              Apply to be a Team Member
+            </Link>
+
+            <Link
+              href="https://forms.gle/C38xCoVV9MFvTS4q8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-brown-500 hover:bg-brown-400 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors"
+            >
+              Apply to be a Team Lead
+            </Link>
+          </div>
+
+
         </main>
         <Footer />
       </div>
