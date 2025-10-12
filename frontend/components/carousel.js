@@ -24,6 +24,17 @@ const ImageCarousel = () => {
         <SwiperSlide>
           <div style={{ position: 'relative', width: '100%', height: '500px' }}>
             <Image
+              src="/slideshow/one.jpg"
+              alt="Slide 1"
+              layout="fill"
+              objectFit="cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
+            <Image
               src="/slideshow/two.jpg"
               alt="Slide 2"
               layout="fill"
@@ -35,7 +46,7 @@ const ImageCarousel = () => {
         <SwiperSlide>
           <div style={{ position: 'relative', width: '100%', height: '500px' }}>
             <Image
-              src="/slideshow/three.jpg"
+              src="/slideshow/three.png"
               alt="Slide 3"
               layout="fill"
               objectFit="cover"
@@ -57,63 +68,19 @@ const ImageCarousel = () => {
         <SwiperSlide>
           <div style={{ position: 'relative', width: '100%', height: '500px' }}>
             <Image
+              src="/slideshow/five.jpg"
+              alt="Slide 5"
+              layout="fill"
+              objectFit="cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+        </SwiperSlide>
+                <SwiperSlide>
+          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
+            <Image
               src="/slideshow/six.png"
               alt="Slide 6"
-              layout="fill"
-              objectFit="cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
-            <Image
-              src="/slideshow/seven.png"
-              alt="Slide 7"
-              layout="fill"
-              objectFit="cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
-            <Image
-              src="/slideshow/eight.png"
-              alt="Slide 8"
-              layout="fill"
-              objectFit="cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
-            <Image
-              src="/slideshow/nine.png"
-              alt="Slide 9"
-              layout="fill"
-              objectFit="cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
-            <Image
-              src="/slideshow/ten.png"
-              alt="Slide 10"
-              layout="fill"
-              objectFit="cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div style={{ position: 'relative', width: '100%', height: '500px' }}>
-            <Image
-              src="/slideshow/eleven.jpg"
-              alt="Slide 11"
               layout="fill"
               objectFit="cover"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
