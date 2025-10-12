@@ -14,7 +14,7 @@ export default function localProject() {
       <Navbar />
 
       <div className="max-w-4xl mx-auto mt-12 px-6 mb-20">
-        <h1 className="text-3xl font-fredoka font-lora text-teal-600 mb-6 text-center">
+        <h1 className="text-3xl font-fredoka font-lora text-cyan-600 mb-6 text-center">
           Host a Local Environmental Project
         </h1>
 
@@ -27,7 +27,7 @@ export default function localProject() {
                 href="https://join.slack.com/t/thegreencause/shared_invite/zt-g376q3zk-EN8vM9bk26fjduNDU8r54A"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-teal-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition w-full md:w-auto text-center"
+                className="bg-cyan-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition w-full md:w-auto text-center"
             >
                 Join our Slack
             </a>
@@ -43,7 +43,7 @@ export default function localProject() {
                 href="https://docs.google.com/forms/d/1fZF3RnjzvrLT88wbid-i6hORU6FiUddyKaz88yn1QwY/prefill"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-teal-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition w-full md:w-auto text-center"
+                className="bg-cyan-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition w-full md:w-auto text-center"
             >
                 Submit your Hours
             </a>
@@ -59,7 +59,7 @@ export default function localProject() {
                 href="https://forms.gle/T9zv2ZVKJrrowMQJA"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-teal-900 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition w-full md:w-auto text-center"
+                className="bg-cyan-700 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition w-full md:w-auto text-center"
             >
                 Submit your Proposal
             </a>

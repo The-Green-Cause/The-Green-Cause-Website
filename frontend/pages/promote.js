@@ -14,7 +14,7 @@ export default function promote() {
       <Navbar />
 
       <div className="max-w-4xl mx-auto mt-12 px-6 mb-20">
-        <h1 className="text-3xl font-fredoka font-lora text-teal-600 mb-6 text-center">
+        <h1 className="text-3xl font-fredoka font-lora text-brown-600 mb-6 text-center">
             Promote The Green Cause
         </h1>
 
@@ -27,7 +27,7 @@ export default function promote() {
               href="https://forms.gle/1LTMmbaBaeah4jkF7"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-teal-900 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition w-full md:w-auto text-center"
+              className="bg-brown-700 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition w-full md:w-auto text-center"
             >
                 Submite Proof Here
             </a>
