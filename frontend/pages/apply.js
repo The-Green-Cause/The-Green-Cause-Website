@@ -36,7 +36,7 @@ export default function Apply() {
               href="https://forms.gle/3FY6khB5ETa25iHu7"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-brown-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors"
+              className="inline-block bg-brown-500 hover:bg-brown-400 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors"
             >
               Apply to be a Team Member
             </Link>
@@ -45,7 +45,7 @@ export default function Apply() {
               href="https://forms.gle/C38xCoVV9MFvTS4q8"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-brown-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors"
+              className="inline-block bg-brown-500 hover:bg-brown-400 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors"
             >
               Apply to be a Team Lead
             </Link>
