@@ -54,7 +54,7 @@ export default function AboutUs() {
                     <h1 className="text-3xl font-fredoka font-lora mb-10 text-emerald-600">
                         OUR THREE PILLARS
                     </h1>
-                    <div className="grid md:grid-cols-3 gap-8">
+                    <div className="grid md:grid-cols-3 gap-8 mb-10">
                         {[
                             {
                                 title: "Engagement",
