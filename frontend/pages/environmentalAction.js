@@ -14,7 +14,7 @@ export default function environmentalAction() {
       <Navbar />
 
       <div className="max-w-4xl mx-auto mt-12 px-6 mb-20">
-        <h1 className="text-3xl font-fredoka font-lora text-teal-600 mb-6 text-center">
+        <h1 className="text-3xl font-fredoka font-lora text-teal-700 mb-6 text-center">
           Do an Environmental Action
         </h1>
 
@@ -27,7 +27,7 @@ export default function environmentalAction() {
               href="https://forms.gle/Hs813rXHqwAM41329"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-teal-900 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition w-full md:w-auto text-center"
+              className="bg-teal-800 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition w-full md:w-auto text-center"
             >
                 Submission Form
             </a>
@@ -50,7 +50,7 @@ export default function environmentalAction() {
               href="Not sure what to do?"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-teal-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition w-full md:w-auto text-center"
+              className="bg-teal-700 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition w-full md:w-auto text-center"
             >
               Environmental Action Guide
             </a>
@@ -66,7 +66,7 @@ export default function environmentalAction() {
               href="https://docs.google.com/forms/d/1fZF3RnjzvrLT88wbid-i6hORU6FiUddyKaz88yn1QwY/prefill"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-teal-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition w-full md:w-auto text-center"
+              className="bg-teal-700 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition w-full md:w-auto text-center"
             >
               Social Media Consent Form
             </a>
