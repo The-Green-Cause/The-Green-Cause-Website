@@ -26,32 +26,58 @@ export default function Apply() {
             Apply to Join Our Team
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8">
-            We&apos;re always looking for passionate individuals who want to make a difference in environmental advocacy and sustainability! As part of our internal team, you&apos;ll help lead initiatives, support local chapters, and contribute to our mission of creating a greener future. You can either apply to be a team lead to join one of our two internal teams, our environmental education or social media teams. As team lead, you will be able to gain leadership experience and help create the vision of our organization. As a team member, you get the chance to create content that will receive engagement from schools, educators, STEM programs, camps, public events, and our online audiences! Creating social media content and our environmental educational curriculum is vital to growing our organization. Start by filling out one of the two forms depending on how you want to be involved: 
+          <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+            Join Our Internal Team
+          </h2>
 
+          <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8">
+            We&apos;re always looking for passionate individuals who want to make a 
+            difference in environmental advocacy and sustainability! As part of our internal 
+            team, you&apos;ll help  <span className="font-semibold">lead initiatives, support 
+            local chapters, and contribute to our mission </span> of creating a greener 
+            future. You can either apply to be a team lead to join one of our two internal
+            teams, our environmental education or social media teams. Start by filling out
+            one of the two forms depending on how you want to be involved: 
           </p>
 
-          <div className="flex flex-col items-center gap-4">
-            <Link
-              href="https://forms.gle/3FY6khB5ETa25iHu7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-brown-500 hover:bg-brown-400 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors"
-            >
-              Apply to be a Team Member
-            </Link>
+          <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
-            <Link
-              href="https://forms.gle/C38xCoVV9MFvTS4q8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-brown-500 hover:bg-brown-400 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors"
-            >
-              Apply to be a Team Lead
-            </Link>
-          </div>
+            <div className="text-center md:text-left">
+              <Link
+                href="https://forms.gle/C38xCoVV9MFvTS4q8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-brown-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors hover:bg-brown-600"
+              >
+                Internal Team Lead Application
+              </Link>
+              
+              <p className=" text-lg md:text-lg text-gray-700 mt-4">
+                As team lead, you will be able to gain leadership experience and help create the vision of our organization.
+              </p>
+
+            </div>
 
 
+            <div className="text-center md:text-right">
+              <Link
+                href="​​https://forms.gle/C38xCoVV9MFvTS4q8 "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-brown-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors"
+                >
+                  Internal Team Lead Application
+                </Link>
+
+                <p className="text-lg md:text-lg text-gray-700 mt-4"> 
+                  As a team member, you get the chance to create content that will receive engagement 
+                  from schools, educators, STEM programs, camps, public events, and our online 
+                  audiences! Creating social media content and our environmental educational curriculum
+                  is vital to growing our organization.
+                </p>
+              </div>
+            </div>
+          
         </main>
         <Footer />
       </div>
