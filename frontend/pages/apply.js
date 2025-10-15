@@ -40,44 +40,34 @@ export default function Apply() {
             one of the two forms depending on how you want to be involved: 
           </p>
 
-          <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-
-            <div className="text-center md:text-left">
-              <Link
-                href="https://forms.gle/C38xCoVV9MFvTS4q8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-brown-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors hover:bg-brown-600"
-              >
-                Internal Team Lead Application
-              </Link>
-              
-              <p className=" text-lg md:text-lg text-gray-700 mt-4">
-                As team lead, you will be able to gain leadership experience and help create the vision of our organization.
-              </p>
-
-            </div>
-
-
-            <div className="text-center md:text-right">
-              <Link
-                href="​​https://forms.gle/C38xCoVV9MFvTS4q8 "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-brown-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors"
-                >
-                  Internal Team Lead Application
-                </Link>
-
-                <p className="text-lg md:text-lg text-gray-700 mt-4"> 
-                  As a team member, you get the chance to create content that will receive engagement 
-                  from schools, educators, STEM programs, camps, public events, and our online 
-                  audiences! Creating social media content and our environmental educational curriculum
-                  is vital to growing our organization.
-                </p>
-              </div>
-            </div>
+          <Link href="https://forms.gle/3FY6khB5ETa25iHu7 " 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-brown-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors" 
+          > 
+            Internal Team Member Application 
+          </Link> 
           
+          <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8"> 
+            As team lead, you will be able to gain leadership experience and help create the 
+            vision of our organization. 
+          </p> 
+            
+          <Link href="​​https://forms.gle/C38xCoVV9MFvTS4q8 " 
+            target="_blank" rel="noopener noreferrer" 
+            className="inline-block bg-brown-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors" 
+          > 
+            Internal Team Lead Application 
+          </Link> 
+          
+          <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8"> 
+            As a team member, you get the chance to create content that will receive engagement 
+            from schools, educators, STEM programs, camps, public events, and our online audiences! 
+            Creating social media content and our environmental educational curriculum is vital to 
+            growing our organization. 
+          </p>
+         
+        
         </main>
         <Footer />
       </div>
