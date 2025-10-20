@@ -3,7 +3,18 @@ import Footer from "../../components/footer";
 import Head from "next/head";
 import { Mail, Instagram } from "lucide-react";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 export default function NewJerseyChapter() {
+    const images = [
+    "img1.jpg",
+    "img2.jpg"
+  ];
+
   return (
     <>
       <Head>
@@ -34,6 +45,28 @@ export default function NewJerseyChapter() {
                 <a href="https://www.instagram.com/sb_greencause" target="_blank" rel="noopener noreferrer">
                   <Instagram size={28} className="text-pink-600 hover:text-pink-800" />
                 </a>
+              </div>
+
+              {/* Carousel */}
+              <div className="mt-auto">
+                <Swiper
+                  modules={[Navigation, Pagination]}
+                  spaceBetween={16}
+                  slidesPerView={1}
+                  navigation
+                  pagination={{ clickable: true }}
+                  className="rounded-xl"
+                >
+                  {images.map((img, index) => (
+                    <SwiperSlide key={index}>
+                      <img
+                        src={`/njslideshow/${img}`}
+                        alt={`Chapter Event ${index + 1}`}
+                        className="w-full h-auto max-h-[300px] md:max-h-[400px] object-cover rounded-xl"
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
               </div>
             </div>
 
