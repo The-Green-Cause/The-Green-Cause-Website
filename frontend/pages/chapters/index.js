@@ -4,14 +4,16 @@ import Footer from "../../components/footer";
 import { useState, useEffect } from "react";
 
 export default function Chapters() {
+
+    {/* Slideshow Handler */}
   const [nigeriaImage, setNigeriaImage] = useState("");
   const [njImage, setNjImage] = useState("");
 
   useEffect(() => {
-    const randomNigeria = Math.floor(Math.random() * 7) + 1;
-    const randomNJ = Math.floor(Math.random() * 2) + 1;
-    setNigeriaImage(`/nigeriaslideshow/img${randomNigeria}.jpg`);
-    setNjImage(`/njslideshow/img${randomNJ}.jpg`);
+    const randomNigeriaImage = Math.floor(Math.random() * 7) + 1;
+    const randomNJImage = Math.floor(Math.random() * 2) + 1;
+    setNigeriaImage(`/nigeriaslideshow/img${randomNigeriaImage}.jpg`);
+    setNjImage(`/njslideshow/img${randomNJImage}.jpg`);
   }, []);
 
   const chapters = {
