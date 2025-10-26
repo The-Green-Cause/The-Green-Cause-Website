@@ -43,7 +43,7 @@ export default function Apply() {
           <Link href="https://forms.gle/3FY6khB5ETa25iHu7 " 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-block bg-brown-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors" 
+            className="inline-block bg-cyan-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors" 
           > 
             Internal Team Member Application 
           </Link> 
@@ -55,7 +55,7 @@ export default function Apply() {
             
           <Link href="​​https://forms.gle/C38xCoVV9MFvTS4q8 " 
             target="_blank" rel="noopener noreferrer" 
-            className="inline-block bg-brown-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors" 
+            className="inline-block bg-teal-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors" 
           > 
             Internal Team Lead Application 
           </Link> 
