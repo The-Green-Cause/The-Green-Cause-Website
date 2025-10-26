@@ -47,7 +47,7 @@ export default function Apply() {
                 href="https://forms.gle/C38xCoVV9MFvTS4q8"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-brown-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors hover:bg-brown-600"
+                className="inline-block bg-teal-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors hover:bg-teal-500"
               >
                 Internal Team Lead Application
               </Link>
@@ -61,12 +61,12 @@ export default function Apply() {
 
             <div className="text-center md:text-right">
               <Link
-                href="​​https://forms.gle/C38xCoVV9MFvTS4q8 "
+                  href="https://forms.gle/3FY6khB5ETa25iHu7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-brown-500 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors"
+                  className="inline-block bg-teal-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors hover:bg-teal-500"
                 >
-                  Internal Team Lead Application
+                  Internal Team Member Application
                 </Link>
 
                 <p className="text-lg md:text-lg text-gray-700 mt-4"> 

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import { useState, useEffect } from "react";
+import Head from 'next/head';
 
 export default function Chapters() {
 
@@ -33,8 +34,34 @@ export default function Chapters() {
     },
   };
 
-  return (
+  return ( 
     <div>
+    <Head>
+        <title>Home | The Green Cause</title>
+        <meta
+          name="description"
+          content="The Green Cause is a youth-led environmental organization dedicated to promoting sustainability and environmental awareness.  Learn about our mission, programs, and how you can help."
+        />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Home | The Green Cause" />
+        <meta
+          property="og:description"
+          content="The Green Cause is a youth-led environmental organization dedicated to promoting sustainability and environmental awareness.  Learn about our mission, programs, and how you can help."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.thegreencause.org/" />
+        <meta property="og:image" content="https://www.thegreencause.org/images/logo.png" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Home | The Green Cause" />
+        <meta
+          name="twitter:description"
+          content="The Green Cause is a youth-led environmental organization dedicated to promoting sustainability and environmental awareness. Learn about our mission, programs, and how you can help."
+        />
+        <meta name="twitter:image" content="https://www.thegreencause.org/logo.png" />
+      </Head>
       <Navbar />
       <main className="min-h-screen bg-gray-50 py-12 px-6">
         <section className="max-w-6xl mx-auto mb-12">
