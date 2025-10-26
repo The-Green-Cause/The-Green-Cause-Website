@@ -78,6 +78,14 @@ export default function Apply() {
               </div>
             </div>
           
+          <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8"> 
+            As a team member, you get the chance to create content that will receive engagement 
+            from schools, educators, STEM programs, camps, public events, and our online audiences! 
+            Creating social media content and our environmental educational curriculum is vital to 
+            growing our organization. 
+          </p>
+         
+        
         </main>
         <Footer />
       </div>
