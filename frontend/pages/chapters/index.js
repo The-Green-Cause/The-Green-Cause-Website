@@ -2,41 +2,68 @@ import Link from "next/link";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import { useState, useEffect } from "react";
+import Head from 'next/head';
 
 export default function Chapters() {
-  // State to hold a random image for Nigeria chapter
-  const [randomImage, setRandomImage] = useState("");
+
+    {/* Slideshow Handler */}
+  const [nigeriaImage, setNigeriaImage] = useState("");
+  const [njImage, setNjImage] = useState("");
 
   useEffect(() => {
-    const randomNum = Math.floor(Math.random() * 7) + 1; // Random number between 1 and 7
-    setRandomImage(`/nigeriaslideshow/img${randomNum}.jpg`);
+    const randomNigeriaImage = Math.floor(Math.random() * 7) + 1;
+    const randomNJImage = Math.floor(Math.random() * 2) + 1;
+    setNigeriaImage(`/nigeriaslideshow/img${randomNigeriaImage}.jpg`);
+    setNjImage(`/njslideshow/img${randomNJImage}.jpg`);
   }, []);
 
-  // Chapters data
   const chapters = {
     nigeria: {
       name: "Nigeria",
       location: "Oyo, Nigeria",
       description:
         "Empowering students to lead sustainability efforts across Africa.",
-      image: randomImage || "/nigeriaslideshow/img1.jpg", // fallback image
+      image: nigeriaImage || "/nigeriaslideshow/img1.jpg",
     },
     "new-jersey": {
       name: "New Jersey",
       location: "South Brunswick, NJ",
       description:
         "Driving environmental change in the heart of the garden state.",
-      image: "/images/chapters/new-york.jpg",
+      image: njImage || "/njslideshow/img1.jpg",
     },
-    // Add more chapters here as needed
   };
 
-  return (
+  return ( 
     <div>
-      <Navbar />
+    <Head>
+        <title>Home | The Green Cause</title>
+        <meta
+          name="description"
+          content="The Green Cause is a youth-led environmental organization dedicated to promoting sustainability and environmental awareness.  Learn about our mission, programs, and how you can help."
+        />
 
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Home | The Green Cause" />
+        <meta
+          property="og:description"
+          content="The Green Cause is a youth-led environmental organization dedicated to promoting sustainability and environmental awareness.  Learn about our mission, programs, and how you can help."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.thegreencause.org/" />
+        <meta property="og:image" content="https://www.thegreencause.org/images/logo.png" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Home | The Green Cause" />
+        <meta
+          name="twitter:description"
+          content="The Green Cause is a youth-led environmental organization dedicated to promoting sustainability and environmental awareness. Learn about our mission, programs, and how you can help."
+        />
+        <meta name="twitter:image" content="https://www.thegreencause.org/logo.png" />
+      </Head>
+      <Navbar />
       <main className="min-h-screen bg-gray-50 py-12 px-6">
-        {/* Intro Section */}
         <section className="max-w-6xl mx-auto mb-12">
           <h1 className="text-5xl font-fredoka text-green-800 text-center mb-6">Chapters</h1>
           <p className="text-gray-700 leading-relaxed">
@@ -44,22 +71,15 @@ export default function Chapters() {
           </p>
         </section>
 
-        {/* Why Create a Chapter Section */}
         <section className="max-w-6xl mx-auto mb-12">
-          <h2 className="text-4xl font-fredoka mb-6">
-            Why should I create a chapter?
-          </h2>
+          <h2 className="text-4xl font-fredoka mb-6">Why should I create a chapter?</h2>
           <p className="text-gray-700 leading-relaxed">
-            Starting a chapter for The Green Cause serves as an opportunity to work with your community to address climate change. This allows you to connect with city and/or school officials, create events & projects, and bring together a coalition of like-minded students. You will be able to learn & apply many important leadership development skills that will help you with your future endeavors. You will be able to have autonomy to make decisions for your own chapter and create a vision for The Green Cause with all the resources and support provided by us. All of this while learning more about the environmental field and earning community service hours for your hard work! 
+            Starting a chapter for The Green Cause serves as an opportunity to work with your community to address climate change. This allows you to connect with city and/or school officials, create events & projects, and bring together a coalition of like-minded students. You will be able to learn & apply many important leadership development skills that will help you with your future endeavors. You will be able to have autonomy to make decisions for your own chapter and create a vision for The Green Cause with all the resources and support provided by us. All of this while learning more about the environmental field and earning community service hours for your hard work!
           </p>
         </section>
 
-        {/* Chapters Grid Section */}
         <section>
-          <h2 className="text-4xl font-fredoka text-center mb-10">
-            Our Chapters
-          </h2>
-
+          <h2 className="text-4xl font-fredoka text-center mb-10">Our Chapters</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {Object.entries(chapters).map(([slug, chapter]) => (
               <div
@@ -86,7 +106,6 @@ export default function Chapters() {
             ))}
           </div>
 
-          {/* Create Chapter CTA */}
           <div className="text-center mt-8">
             <p className="text-lg text-gray-700">
               Don’t see your city, school, etc represented?{" "}
@@ -101,7 +120,6 @@ export default function Chapters() {
           </div>
         </section>
       </main>
-
       <Footer />
     </div>
   );
