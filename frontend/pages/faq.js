@@ -28,7 +28,17 @@ export default function Home() {
       and teachers have noted that this peer-to-peer learning model is effective.
 
       Additionally, volunteers gain valuable skills in presentation making, which benefits them in college and their careers.`
+    },
+    {
+      question: "How can I learn more about the environment and the GreenCause initiative?",
+      answer: `
+        You can explore our About page to learn more about our mission, values, and the environmental issues we are tackling.
+         You can also explore our various programs and initiatives to dive deeper into the work we are doing and how you can 
+         participate through our Media and Volunteer pages.`,
+        linkText: "To stay updated, you can join our newsletter, where we share resources, announcements, and ways to get involved.",
+        link: " http://eepurl.com/hRWajf"
     }
+
   ];
 
   const [openIndex, setOpenIndex] = useState(null);

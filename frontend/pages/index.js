@@ -141,11 +141,12 @@ export default function Home() {
           </div>
         </div>
 
-        {/* COLLABORATORS */}
+        {/* COLLABORATORS — FIXED + UPDATED */}
         <div className="flex flex-col items-center my-20 px-4 sm:px-6 md:px-8 text-center">
           <h3 className="font-fredoka text-3xl md:text-3xl mb-10 text-emerald-700">
             Our Collaborators
           </h3>
+
           <PartnerMarquee logos={logos} />
         </div>
 
@@ -163,10 +164,9 @@ function PartnerMarquee({ logos }) {
   const containerRef = useRef(null);
   const [offset, setOffset] = useState(0);
 
-  const speed = 0.4; // lower = slower
-  const fullLogos = [...logos, ...logos]; // double for seamless looping
+  const speed = 0.4;
+  const fullLogos = [...logos, ...logos];
 
-  // Infinite auto-scroll loop
   useEffect(() => {
     let frame;
     const animate = () => {
@@ -181,7 +181,6 @@ function PartnerMarquee({ logos }) {
     return () => cancelAnimationFrame(frame);
   }, []);
 
-  /* DRAGGING */
   const drag = useRef({
     active: false,
     startX: 0,
