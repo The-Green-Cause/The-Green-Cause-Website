@@ -144,29 +144,41 @@ export default function Home() {
         </div>
 
         {/* Our Collaborators Section */}
-        <div className="flex flex-col items-center my-20 px-4 sm:px-6 md:px-8 text-center">
-          <h3 className="font-fredoka text-3xl md:text-3xl mb-10 text-emerald-700">
-            Our Collaborators
-          </h3>
+          <div className="flex flex-col items-center my-20 px-4 sm:px-6 md:px-8 text-center">
+            <h3 className="font-fredoka text-3xl md:text-3xl mb-10 text-emerald-700">
+              Our Collaborators
+            </h3>
 
-          {/* TEXT + SLIDER LAYOUT */}
-          <div className="flex flex-col lg:flex-row items-center gap-10 w-full">
+            {/* TEXT + SLIDER LAYOUT */}
+            <div className="flex flex-col lg:flex-row items-center gap-10 w-full">
 
-            {/* Slider */}
-            <div className="w-full overflow-hidden">
-              <div className="flex items-center gap-8 md:gap-12 lg:gap-16 animate-marquee min-w-full">
-                {[...logos, ...logos].map((fileName, i) => (
-                  <img
-                    key={`${fileName}-${i}`}
-                    src={`/partners/${fileName}`}
-                    alt={`Collaborator ${i + 1}`}
-                    className="h-20 md:h-28 lg:h-36 w-auto object-contain"
-                  />
-                ))}
+              {/* Slider */}
+              <div className="w-full overflow-hidden">
+                <div className="flex items-center gap-8 md:gap-12 lg:gap-16 animate-marquee min-w-full">
+                  {[...logos, ...logos].map((fileName, i) => (
+                    <img
+                      key={`${fileName}-${i}`}
+                      src={`/partners/${fileName}`}
+                      alt={`Collaborator ${i + 1}`}
+                      className="h-20 md:h-28 lg:h-36 w-auto object-contain"
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
+
+          <div className="my-12 flex justify-center">
+            <Link
+              href="https://your-newsletter-link.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-teal-700 text-white font-semibold text-xl px-10 py-5 rounded-xl shadow-lg hover:bg-teal-700 transition-colors"
+            >
+              Join Our Newsletter
+            </Link>
+          </div>
+
         <Footer />
       </div>
     </>

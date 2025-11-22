@@ -35,6 +35,11 @@ export default function Footer() {
           </a>
         </div>
 
+        {/* Address */}
+        <p className="text-sm text-green-100">
+          PO Box 1103 Mountainside NJ 07092
+        </p>
+
         {/* Copyright */}
         <p className="text-sm text-green-100">
           © 2020 The Green Cause. All rights reserved.

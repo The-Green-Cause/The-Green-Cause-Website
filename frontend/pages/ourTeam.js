@@ -15,8 +15,14 @@ export default function TeamPage() {
         {
            name: "Gabby Warren",
             role: "Lead Coordinator",
-            bio: "Gabby is an undergraduate at the University of South Florida and has been with The Green Cause since 2023. As a lead coordinator, she’s passionate about policy, community engagement, and educating the youth on environmental importance and inspiring sustainable habits.",
+            bio: "Gabby is an undergraduate at the University of South Florida and has been with The Green Cause since 2023. As a lead coordinator, she is passionate about policy, community engagement, and educating the youth on environmental importance and inspiring sustainable habits.",
             image: "/team/gabby2.jpg",
+        },
+        {
+           name: "Sonia Garg",
+            role: "Lead Coordinator",
+            bio: "Sonia is an honors undergraduate at the University of Toledo pursuing medicine that integrates environmental and social determinants of health. She joined the Green Cause in 2022. As lead coordinator, she empowers youth and broader communities to address sustainability and environmental challenges.",
+            image: "/team/sonia.jpg",
         },
         {
            name: "Leah Matheson",
