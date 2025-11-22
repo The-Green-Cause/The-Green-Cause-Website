@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Head from "next/head";
@@ -50,44 +50,42 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>
+
       <div>
         <Navbar />
+
+        {/* HERO SECTION */}
         <div id="imagebg" className="flex flex-col lg:flex-row bg-lightTan w-full overflow-hidden">
-  {/* Text + Button */}
-  <div className="flex flex-col justify-center items-center text-center px-4 py-10 lg:w-1/2 z-10">
-    <p className="text-emerald-700 text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-6xl font-lora_semibold">
-      Earth&apos;s future, <br />Our Mission
-    </p>
-    <p className="text-emerald-700 text-xl md:text-2xl lg:text-3xl xl:text-3xl mt-5 font-poppins max-w-2xl">
-      Planting the seeds of knowledge to educate and empower generations to a thriving earth and sustainable future
-    </p>
-  </div>
+          <div className="flex flex-col justify-center items-center text-center px-4 py-10 lg:w-1/2 z-10">
+            <p className="text-emerald-700 text-2xl font-semibold md:text-3xl lg:text-4xl xl:text-6xl font-lora_semibold">
+              Earth&apos;s future, <br />Our Mission
+            </p>
+            <p className="text-emerald-700 text-xl md:text-2xl lg:text-3xl xl:text-3xl mt-5 font-poppins max-w-2xl">
+              Planting the seeds of knowledge to educate and empower generations to a thriving earth and sustainable future
+            </p>
+          </div>
 
-  {/* Carousel */}
-  <div className="relative w-full lg:w-1/2 h-[300px] lg:h-[60vh] flex justify-center items-center overflow-hidden">
-    <div className="absolute w-full h-full">
-      <ImageCarousel />
-    </div>
-  </div>
-</div>
+          <div className="relative w-full lg:w-1/2 h-[300px] lg:h-[60vh] flex justify-center items-center overflow-hidden">
+            <div className="absolute w-full h-full">
+              <ImageCarousel />
+            </div>
+          </div>
+        </div>
 
-
-        {/* Who We Are Section */}
+        {/* WHO WE ARE */}
         <div className="flex flex-col items-center my-10 px-6 text-center">
-          <h3 className="font-fredoka text-3xl md:text-3xl mb-6 text-emerald-700">
-            Who We Are
-          </h3>
+          <h3 className="font-fredoka text-3xl md:text-3xl mb-6 text-emerald-700">Who We Are</h3>
           <p className="max-w-4xl text-lg leading-relaxed">
-            The Green Cause is a youth-led environmental organization dedicated 
-            to promoting sustainability and environmental awareness. Through engaging 
-            educational workshops, community initiatives, and our chapters, we empower 
-            youth and communities to take action in protecting our planet. Our mission 
-            is rooted in collaboration, innovation, and inspiring the next generation 
+            The Green Cause is a youth-led environmental organization dedicated
+            to promoting sustainability and environmental awareness. Through engaging
+            educational workshops, community initiatives, and our chapters, we empower
+            youth and communities to take action in protecting our planet. Our mission
+            is rooted in collaboration, innovation, and inspiring the next generation
             to lead sustainable lifestyles and create lasting impact.
           </p>
         </div>
 
-        {/* Action Section */}
+        {/* ACTION SECTION */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 mb-10">
           <Link href="/contact" className="relative group">
             <div className="relative text-center p-20 font-croissant_one text-white">
@@ -123,7 +121,7 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* Our Sponsors Section */}
+        {/* SPONSORS */}
         <div className="flex flex-col items-center my-20 px-6 text-center">
           <h3 className="font-fredoka text-3xl md:text-4xl mb-10 text-emerald-700">
             Our Sponsors
@@ -143,32 +141,98 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Our Collaborators Section */}
+        {/* COLLABORATORS */}
         <div className="flex flex-col items-center my-20 px-4 sm:px-6 md:px-8 text-center">
           <h3 className="font-fredoka text-3xl md:text-3xl mb-10 text-emerald-700">
             Our Collaborators
           </h3>
-
-          {/* TEXT + SLIDER LAYOUT */}
-          <div className="flex flex-col lg:flex-row items-center gap-10 w-full">
-
-            {/* Slider */}
-            <div className="w-full overflow-hidden">
-              <div className="flex items-center gap-8 md:gap-12 lg:gap-16 animate-marquee min-w-full">
-                {[...logos, ...logos].map((fileName, i) => (
-                  <img
-                    key={`${fileName}-${i}`}
-                    src={`/partners/${fileName}`}
-                    alt={`Collaborator ${i + 1}`}
-                    className="h-20 md:h-28 lg:h-36 w-auto object-contain"
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
+          <PartnerMarquee logos={logos} />
         </div>
+
         <Footer />
       </div>
     </>
+  );
+}
+
+/* ───────────────────────────────────────────── */
+/* PARTNER MARQUEE COMPONENT WITH DRAG + INFINITE LOOP */
+/* ───────────────────────────────────────────── */
+
+function PartnerMarquee({ logos }) {
+  const containerRef = useRef(null);
+  const [offset, setOffset] = useState(0);
+
+  const speed = 0.4; // lower = slower
+  const fullLogos = [...logos, ...logos]; // double for seamless looping
+
+  // Infinite auto-scroll loop
+  useEffect(() => {
+    let frame;
+    const animate = () => {
+      setOffset((prev) => {
+        const totalWidth = containerRef.current?.scrollWidth / 2 || 0;
+        const next = prev - speed;
+        return next <= -totalWidth ? 0 : next;
+      });
+      frame = requestAnimationFrame(animate);
+    };
+    animate();
+    return () => cancelAnimationFrame(frame);
+  }, []);
+
+  /* DRAGGING */
+  const drag = useRef({
+    active: false,
+    startX: 0,
+    startOffset: 0,
+  });
+
+  const onDown = (e) => {
+    drag.current.active = true;
+    drag.current.startX = e.touches ? e.touches[0].clientX : e.clientX;
+    drag.current.startOffset = offset;
+  };
+
+  const onMove = (e) => {
+    if (!drag.current.active) return;
+    const currentX = e.touches ? e.touches[0].clientX : e.clientX;
+    const dx = currentX - drag.current.startX;
+    setOffset(drag.current.startOffset + dx);
+  };
+
+  const onUp = () => {
+    drag.current.active = false;
+  };
+
+  return (
+    <div
+      className="w-full overflow-hidden cursor-grab active:cursor-grabbing"
+      ref={containerRef}
+      onMouseDown={onDown}
+      onMouseMove={onMove}
+      onMouseUp={onUp}
+      onMouseLeave={onUp}
+      onTouchStart={onDown}
+      onTouchMove={onMove}
+      onTouchEnd={onUp}
+    >
+      <div
+        className="flex gap-16 items-center"
+        style={{
+          transform: `translateX(${offset}px)`,
+          whiteSpace: "nowrap",
+        }}
+      >
+        {fullLogos.map((fileName, i) => (
+          <img
+            key={`${fileName}-${i}`}
+            src={`/partners/${fileName}`}
+            className="h-20 md:h-28 lg:h-36 object-contain"
+            alt="Collaborator Logo"
+          />
+        ))}
+      </div>
+    </div>
   );
 }
