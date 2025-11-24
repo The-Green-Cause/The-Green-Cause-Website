@@ -150,6 +150,17 @@ export default function Home() {
           <PartnerMarquee logos={logos} />
         </div>
 
+        <div className="my-12 flex justify-center">
+            <Link
+              href="http://eepurl.com/hRWajf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-teal-700 text-white font-semibold text-xl px-10 py-5 rounded-xl shadow-lg hover:bg-teal-700 transition-colors"
+            >
+              Join Our Newsletter
+            </Link>
+          </div>
+
         <Footer />
       </div>
     </>
