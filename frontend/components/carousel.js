@@ -11,10 +11,9 @@ import "swiper/css/pagination";
 const expectedSlides = [
   "/slideshow/one.jpg",
   "/slideshow/two.jpg",
-  "/slideshow/three.png",
+  "/slideshow/three.jpg",
   "/slideshow/four.png",
-  "/slideshow/five.jpg",
-  "/slideshow/six.png",
+  "/slideshow/five.png",
 ];
 
 export default function ImageCarousel() {

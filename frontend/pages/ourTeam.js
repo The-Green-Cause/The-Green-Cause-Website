@@ -16,7 +16,7 @@ export default function TeamPage() {
            name: "Gabby Warren",
             role: "Lead Coordinator",
             bio: "Gabby is an undergraduate at the University of South Florida and has been with The Green Cause since 2023. As a lead coordinator, she is passionate about policy, community engagement, and educating the youth on environmental importance and inspiring sustainable habits.",
-            image: "/team/gabby2.jpg",
+            image: "/team/gabby.jpg",
         },
         {
            name: "Sonia Garg",
