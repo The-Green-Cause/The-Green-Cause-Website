@@ -7,7 +7,6 @@ const expectedSlides = [
   "/slideshow/one.jpg",
   "/slideshow/two.jpg",
   "/slideshow/three.jpg",
-  "/slideshow/four.png",
   "/slideshow/five.png",
 ];
 
