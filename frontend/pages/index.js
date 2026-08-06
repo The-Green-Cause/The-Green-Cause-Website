@@ -4,6 +4,12 @@ import Footer from "../components/footer";
 import Head from "next/head";
 import Link from 'next/link';
 import ImageCarousel from '../components/carousel';
+import dynamic from 'next/dynamic';
+
+const Map = dynamic(
+  () => import("../components/map"),
+  { ssr: false }
+);
 
 export default function Home() {
   const sponsorRefs = useRef([]);
@@ -117,6 +123,15 @@ export default function Home() {
               <span className="relative z-10 text-2xl">Donate</span>
             </div>
           </Link>
+        </div>
+
+        {/* MAP SECTION */}
+        <div className="max-w-6xl mx-auto py-12 px-6 text-center">
+          <h3 className="font-fredoka text-3xl md:text-4xl mb-10 text-emerald-700">
+            Our Impact Around the World
+          </h3>
+
+          <Map/>
         </div>
 
         {/* SPONSORS */}
